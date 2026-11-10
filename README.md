@@ -155,11 +155,23 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 
 ## [Clase 13: WordPress Práctico](https://dw3.netlify.app/#/11)
 
-Taller de 3 horas. Herramientas: Local, navegador, VS Code y un asistente de IA (Claude, ChatGPT o similar).
+Taller de 3 horas. Herramientas: Local, navegador, VS Code y un asistente de IA (Claude, ChatGPT o similar). Toda la clase se trabaja sobre el sitio del área protegida que traen de tarea.
 
-- **Bloque 1 (30'):** CMS vs. sitio estático, sitio nuevo en Local, ajustes iniciales (enlaces permanentes, zona horaria e idioma, comentarios, pingbacks y trackbacks desactivados).
-- **Bloque 2 (60'):** Páginas vs. entradas, categorías y etiquetas, el Loop. Ejercicio: 1 página, 2 categorías y 2 entradas.
-- **Bloque 3 (75'):** Anatomía de un tema clásico, maquetación con Gutenberg (hero + grilla de 3 columnas), IA para copy y CSS.
+### Previa (tarea post entrega)
+
+Investigar WordPress y hacer un pequeño ejercicio en [Local](https://localwp.com/):
+
+1. Instalar Local by Flywheel.
+2. Elegir un área protegida de Uruguay para (re)hacer su sitio.
+3. Instalar Astra (theme).
+4. Elegir un starter template para hacer la web de la reserva elegida.
+5. Intentar tener lista al menos la home.
+
+### Bloques
+
+- **Bloque 1 (30'):** CMS vs. sitio estático, revisión de la tarea (plan B para quien no llegó: sitio nuevo en Local + Astra + starter template), ajustes iniciales (enlaces permanentes, zona horaria e idioma, comentarios, pingbacks y trackbacks desactivados, fuera el contenido demo).
+- **Bloque 2 (60'):** Páginas vs. entradas, categorías y etiquetas, el Loop. Ejercicio en el sitio de la reserva: 1 página, 2 categorías, 2 entradas y una página de entradas (la home del template es portada estática).
+- **Bloque 3 (75'):** Anatomía de un tema clásico (Astra), ajustar la home de la reserva con Gutenberg (hero + grilla de 3 atractivos), IA para copy (verificando los datos) y CSS.
 - **Bloque 4 (15'):** Revisión en vivo, errores comunes y checklist de cierre.
 
 ### Tarea: de HTML a tema de WordPress

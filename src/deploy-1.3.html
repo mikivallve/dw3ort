@@ -1,0 +1,39 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>WordPress</small>En vivo</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 4</small>Chequeo y workstream</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-50">
+			<h3>Chequeo en vivo</h3>
+			<ul>
+				<li>☐ Home, una entrada y <em>Novedades</em> cargan.</li>
+				<li>☐ Las imágenes salen de <code class="i">pantheonsite.io</code>, no de <code class="i">.local</code>.</li>
+				<li>☐ <em>Últimos avistamientos</em> funciona (la REST API responde).</li>
+				<li>☐ Enlaces permanentes: si hay 404, <em>Ajustes &rsaquo; Enlaces permanentes &rsaquo; Guardar</em>.</li>
+				<li>☐ Contraseña del admin fuerte: ahora es público.</li>
+			</ul>
+		</div>
+		<div class="col-50">
+			<pre class="sm"><code># ws/deploy
+Cuándo: subir o actualizar el sitio en Pantheon.
+Leer: docs/site.md (En vivo). Nada más.
+Reglas: search-replace siempre con --dry-run antes.
+        Nunca subir *.sql al repo.
+
+## Pasos
+(los de este slide y el anterior, con el alumno ejecutando)
+
+## Cierre
+- site.md › En vivo: URL de Pantheon + fecha.
+- log.md: "Deploy a Pantheon dev · ejecutó: …"</code></pre>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">Cierra la clase. La próxima vez que quieran subir cambios, le piden al agente "subí a Pantheon" y el workstream ya tiene los pasos que hoy probamos.</aside>

@@ -1,0 +1,40 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Agentes</small>Documentación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 2</small>site.md: lo básico</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-60">
+			<pre class="sm"><code># site.md
+- Reserva: Valle del Lunarejo (Rivera). Público: turistas y escuelas.
+- Local: http://lunarejo.local · WP 6.x · PHP 8.x
+- Tema: Astra + reserva-child (repo: github.com/usuario/reserva-child)
+
+## Contenido
+- Páginas: Inicio (portada estática), Cómo llegar, Novedades (entradas)
+- Categorías: novedades, flora-y-fauna
+- Patrones: reserva-child/ficha-especie
+
+## En vivo
+- Pantheon: (vacío hasta el deploy)
+
+## Decisiones
+- 2026-11-10 Comentarios y pingbacks desactivados.</code></pre>
+		</div>
+		<div class="col-40">
+			<ul>
+				<li>Lo que el agente necesita en <strong>todas</strong> las tareas y no puede deducir rápido.</li>
+				<li class="mt-1">Datos, no prosa. Una pantalla.</li>
+				<li class="mt-1"><strong>Decisiones</strong>: para que no vuelva a proponer lo que ya descartaron.</li>
+				<li class="mt-1"><strong>Nunca</strong> contraseñas ni tokens: el repo es público.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">10 min para que escriban el suyo. Muchos datos los sacan con: wp option get home, wp theme list --status=active --fields=name, wp term list category --fields=slug.</aside>

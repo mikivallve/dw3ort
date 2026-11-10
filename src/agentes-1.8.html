@@ -1,0 +1,43 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Agentes</small>Documentación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 3 · Práctica guiada</small>wp-cli en Local</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-40">
+			<h3>Site Shell</h3>
+			<ol>
+				<li>En Local, botón derecho sobre el sitio &rsaquo; <em>Open site shell</em>.</li>
+				<li><code class="i">cd wp-content/themes/reserva-child</code></li>
+				<li>Probar: <code class="i">wp option get home</code></li>
+			</ol>
+			<p class="mt-2"><small>Fuera del Site Shell, <code class="i">wp</code> no encuentra la base de datos de Local.</small></p>
+			<h3 class="mt-2">Apoyo</h3>
+			<ul>
+				<li><a href="https://developer.wordpress.org/cli/commands/" target="_blank" rel="noreferrer" class="icon-link">Comandos de wp-cli</a></li>
+			</ul>
+		</div>
+		<div class="col-60">
+			<pre class="sm"><code># Mirar (salida corta)
+wp theme list --status=active --fields=name
+wp post list --post_type=page --fields=ID,post_title
+wp term list category --fields=term_id,slug
+wp plugin list --status=active --fields=name,version
+
+# Hacer
+wp post create --post_type=page --post_title="Cómo llegar"
+wp option update blogdescription "Área protegida en Rivera"
+wp rewrite flush
+
+# Respaldar antes de algo grande
+wp db export backup.sql   # *.sql en .gitignore</code></pre>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">Ojo con db export: el .sql queda en la carpeta del tema, así que *.sql tiene que estar en el .gitignore antes del primer commit.</aside>

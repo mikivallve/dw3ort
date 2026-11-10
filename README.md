@@ -214,3 +214,25 @@ Sobre el sitio del área protegida en Local:
 | Avistamientos vía REST + `wp_enqueue_script` condicional | 25% |
 | Contenido real, verificado, con créditos; categorías bien usadas | 15% |
 | `IA.md` honesto + defensa | 15% |
+
+## [Clase 14: Documentación para agentes + En vivo](https://dw3.netlify.app/#/12)
+
+Taller de 3 horas (en las slides, _clase 11_). Se trabaja en el repo de `reserva-child` (Tarea 2) con el agente que usen (Claude Code, Codex, Cursor…).
+
+- **Bloque 1 (20'):** por qué documentar para agentes: el agente arranca de cero en cada sesión y leer cuesta tokens.
+- **Bloque 2 (50'):** el sistema: `AGENTS.md` como índice (y `CLAUDE.md` con `@AGENTS.md`), reglas para no quemar tokens, reglas de _modo pareja_ (el agente propone, el alumno ejecuta y explica), y `docs/site.md` con lo básico del sitio.
+- **Bloque 3 (60'):** workstreams (`docs/ws/contenido.md`, `tema.md`, `deploy.md`) con comandos de wp-cli probados para correr en el _Site Shell_ de Local; toda tarea cierra actualizando `site.md` y `log.md`. Ejercicio: armar el sistema y pedirle al agente "quiero sumar 2 especies a Flora y fauna".
+- **Bloque 4 (50'):** en vivo gratis en un sandbox de [Pantheon](https://pantheon.io/plans/pricing) (`dev-*.pantheonsite.io`): crear el sandbox, `wp search-replace … --export=reserva.sql` desde Local, subir código en modo SFTP, importar base y `uploads`, chequeo final y `ws/deploy.md`.
+
+```
+wp-content/themes/reserva-child/
+├── AGENTS.md          ← índice
+├── CLAUDE.md          ← @AGENTS.md
+└── docs/
+    ├── site.md
+    ├── log.md
+    └── ws/
+        ├── contenido.md
+        ├── tema.md
+        └── deploy.md
+```

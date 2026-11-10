@@ -1,0 +1,38 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>WordPress</small>En vivo</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 4 · Práctica guiada</small>De Local a Pantheon</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-60">
+			<pre class="sm"><code># 1. En Local (Site Shell, carpeta del tema)
+# LOCAL    = lo que devuelve: wp option get home
+#            ej. http://lunarejo.local
+# PANTHEON = https://dev-reserva-apellido.pantheonsite.io
+
+wp search-replace LOCAL PANTHEON --all-tables --dry-run
+wp search-replace LOCAL PANTHEON --all-tables --export=reserva.sql</code></pre>
+			<p class="mt-1"><small><code class="i">--export</code> escribe el archivo y <strong>no toca</strong> la base de Local. Que <code class="i">*.sql</code> esté en el <code class="i">.gitignore</code>.</small></p>
+		</div>
+		<div class="col-40">
+			<ol start="2">
+				<li><strong>2. Código</strong> (modo SFTP): en el wp-admin de Pantheon instalar Astra y los plugins, y subir <code class="i">reserva-child.zip</code>. En el panel: <em>Commit</em>.</li>
+				<li class="mt-1"><strong>3. Base:</strong> Dev &rsaquo; <em>Database / Files</em> &rsaquo; <em>Import</em> &rsaquo; subir <code class="i">reserva.sql</code> (hasta 100 MB directo).</li>
+				<li class="mt-1"><strong>4. Imágenes:</strong> comprimir <code class="i">wp-content/uploads</code> en <code class="i">.zip</code> e importarlo en <em>Files</em>.</li>
+				<li class="mt-1"><strong>5.</strong> <em>Clear Caches</em> y entrar con el usuario de Local.</li>
+			</ol>
+			<h3 class="mt-2">Apoyo</h3>
+			<ul>
+				<li><a href="https://developer.wordpress.org/cli/commands/search-replace/" target="_blank" rel="noreferrer" class="icon-link">wp search-replace</a></li>
+				<li><a href="https://docs.pantheon.io/migrate-manual" target="_blank" rel="noreferrer" class="icon-link">Pantheon: migración manual</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">El orden importa: código primero, después la base (que espera que el tema exista), después uploads. La base viaja con los usuarios: el admin y la contraseña de Local pasan a ser los de Pantheon, así que nada de admin/admin.</aside>

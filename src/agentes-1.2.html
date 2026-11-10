@@ -1,0 +1,41 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Agentes</small>Documentación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 2</small>La estructura</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-60">
+			<pre class="sm"><code>wp-content/themes/reserva-child/
+├── AGENTS.md          ← índice (lo leen todos los agentes)
+├── CLAUDE.md          ← una línea: @AGENTS.md
+├── docs/
+│   ├── site.md        ← lo básico del sitio
+│   ├── log.md         ← qué se hizo, una línea por tarea
+│   └── ws/            ← workstreams
+│       ├── contenido.md
+│       ├── tema.md
+│       └── deploy.md
+├── style.css
+└── functions.php</code></pre>
+		</div>
+		<div class="col-40">
+			<ul>
+				<li><strong>Vive en el repo del tema hijo:</strong> el agente trabaja ahí y no ve el core de WordPress.</li>
+				<li class="mt-1"><code class="i">wp</code> igual funciona: wp-cli sube carpetas hasta encontrar <code class="i">wp-config.php</code>.</li>
+				<li class="mt-1"><strong>AGENTS.md</strong> es el estándar abierto (Codex, Cursor, Copilot…). <strong>CLAUDE.md</strong> lo importa con <code class="i">@AGENTS.md</code>: una sola fuente.</li>
+			</ul>
+			<h3 class="mt-2">Apoyo</h3>
+			<ul>
+				<li><a href="https://agents.md/" target="_blank" rel="noreferrer" class="icon-link">AGENTS.md</a></li>
+				<li><a href="https://code.claude.com/docs/en/memory" target="_blank" rel="noreferrer" class="icon-link">Claude Code: CLAUDE.md</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">Que creen la carpeta docs/ y los archivos vacíos ahora. Los llenamos en los próximos slides.</aside>

@@ -1,0 +1,50 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Agentes</small>Documentación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 3</small>Anatomía de un workstream</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-60">
+			<pre class="sm"><code># ws/contenido
+Cuándo: crear o editar páginas, entradas o categorías.
+Leer: docs/site.md (Contenido). Nada del tema.
+
+## Pasos
+1. Confirmá con el alumno qué quiere publicar.
+2. Pasale el comando; él lo corre en el Site Shell.
+3. Pedile solo el ID que devuelve.
+4. Queda en borrador: que la revise y la publique.
+5. Que verifique en el navegador (no leas HTML).
+
+## Comandos
+wp term create category "Flora y fauna"
+wp post create --post_title=Carpincho --post_category=flora-y-fauna
+wp post list --fields=ID,post_title,post_status
+
+## Cierre (obligatorio)
+- site.md: páginas/categorías nuevas.
+- log.md: fecha · qué · quién lo ejecutó.</code></pre>
+		</div>
+		<div class="col-40">
+			<ul>
+				<li><strong>Cuándo:</strong> para que el índice lo encuentre.</li>
+				<li class="mt-1"><strong>Leer:</strong> el mínimo, explícito.</li>
+				<li class="mt-1"><strong>Pasos:</strong> con el alumno adentro.</li>
+				<li class="mt-1"><strong>Comandos</strong> probados, con salida corta.</li>
+				<li class="mt-1"><strong>Cierre:</strong> la tarea no termina hasta actualizar docs.</li>
+			</ul>
+			<h3 class="mt-2">Apoyo</h3>
+			<ul>
+				<li><a href="https://developer.wordpress.org/cli/commands/post/create/" target="_blank" rel="noreferrer" class="icon-link">wp post create</a></li>
+				<li><a href="https://developer.wordpress.org/cli/commands/term/create/" target="_blank" rel="noreferrer" class="icon-link">wp term create</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">Mismo molde para tema.md y deploy.md. Los comandos van probados: un comando que falla hace que el agente explore, y eso es lo que queremos evitar.</aside>

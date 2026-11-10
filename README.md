@@ -174,7 +174,7 @@ Investigar WordPress y hacer un pequeño ejercicio en [Local](https://localwp.co
 - **Bloque 3 (75'):** Anatomía de un tema clásico (Astra), ajustar la home de la reserva con Gutenberg (hero + grilla de 3 atractivos), IA para copy (verificando los datos) y CSS.
 - **Bloque 4 (15'):** Revisión en vivo, errores comunes y checklist de cierre.
 
-### Tarea: de HTML a tema de WordPress
+### Tarea 1: de HTML a tema de WordPress
 
 Convertir el sitio estático de los módulos anteriores en un tema básico de WordPress en Local.
 
@@ -192,3 +192,25 @@ Convertir el sitio estático de los módulos anteriores en un tema básico de Wo
 5. Activar el tema en _Apariencia > Temas_ y verificar que se vea igual que el sitio original.
 
 **Se evalúa:** que el tema se active sin error fatal de PHP, que el HTML esté bien repartido en los 3 archivos, que estén `wp_head()` y `wp_footer()`, y que no haya rutas rotas a CSS ni imágenes.
+
+### Tarea 2: Reserva viva (tema hijo + patrón + avistamientos)
+
+Sobre el sitio del área protegida en Local:
+
+1. **Tema hijo de Astra.** Crear `reserva-child/` con `style.css` (cabecera con `Template: astra`) y `functions.php` que cargue sus estilos con `wp_enqueue_style`. Activarlo. Astra no se toca.
+2. **Patrón de bloques "Ficha de especie".** Armar la ficha en Gutenberg (foto, nombre común, nombre científico, estado de conservación, dónde verla), copiar el marcado desde el _Editor de código_ y registrarlo como patrón en `reserva-child/patterns/ficha-especie.php`. Tiene que aparecer en el insertador, pestaña _Patrones_.
+3. **Contenido real.** Publicar 4 entradas en la categoría _Flora y fauna_ usando el patrón, con especies que existan en esa reserva. Fotos con licencia libre (ej. [Wikimedia Commons](https://commons.wikimedia.org/)) y crédito. Datos verificados contra el sitio oficial o el [SNAP](https://www.ambiente.gub.uy/oan/sistema-nacional-de-areas-protegidas/).
+4. **"Últimos avistamientos" en la home.** Con JS vanilla, traer las 3 últimas entradas de esa categoría desde la REST API (`/wp-json/wp/v2/posts?categories=ID&per_page=3&_embed`) y mostrarlas como tarjetas. El script se carga con `wp_enqueue_script` solo en la portada (`is_front_page()`), nunca pegado en un bloque HTML.
+5. **`IA.md`.** Los prompts usados para los puntos 1, 2 y 4, qué devolvió la IA que estaba mal o no funcionaba, y cómo lo corrigieron.
+
+**Entrega:** repo de GitHub con la carpeta `reserva-child/` (con `IA.md` adentro) y 3 capturas: home con avistamientos, una entrada con la ficha y el patrón en el insertador.
+
+**Defensa (5' en clase):** se abre el `functions.php` y se pide explicar una línea al azar. Si no la pueden explicar, ese punto no cuenta.
+
+| Se evalúa | Peso |
+|---|---|
+| Tema hijo correcto (activa sin error, Astra intacto, CSS encolado) | 20% |
+| Patrón registrado desde el tema y usado en las 4 entradas | 25% |
+| Avistamientos vía REST + `wp_enqueue_script` condicional | 25% |
+| Contenido real, verificado, con créditos; categorías bien usadas | 15% |
+| `IA.md` honesto + defensa | 15% |

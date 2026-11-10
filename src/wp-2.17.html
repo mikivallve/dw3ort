@@ -1,0 +1,39 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>WordPress</small>Práctico</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Tarea 2</small>Reserva viva</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<p>Sobre el sitio de su área protegida en Local.</p>
+	<div class="cols mt-2">
+		<div class="col-60">
+			<ol>
+				<li><strong>Tema hijo de Astra:</strong> <code class="i">reserva-child/</code> con <code class="i">style.css</code> (<code class="i">Template: astra</code>) y <code class="i">functions.php</code> que encole el CSS. Astra no se toca.</li>
+				<li class="mt-1"><strong>Patrón "Ficha de especie":</strong> foto, nombre común y científico, estado de conservación y dónde verla. Armarlo en Gutenberg, copiar el marcado del <em>Editor de código</em> y registrarlo en <code class="i">patterns/ficha-especie.php</code>.</li>
+				<li class="mt-1"><strong>Contenido real:</strong> 4 entradas en <em>Flora y fauna</em> con el patrón. Especies de esa reserva, fotos con licencia libre y crédito, datos verificados.</li>
+				<li class="mt-1"><strong>Últimos avistamientos:</strong> en la home, JS vanilla que trae las 3 últimas entradas de esa categoría por la REST API. Cargado con <code class="i">wp_enqueue_script</code> solo si <code class="i">is_front_page()</code>.</li>
+				<li class="mt-1"><strong>IA.md:</strong> prompts usados, qué devolvió la IA que estaba mal y cómo lo corrigieron.</li>
+			</ol>
+		</div>
+		<div class="col-40">
+			<pre><code>/wp-json/wp/v2/posts
+  ?categories=ID
+  &amp;per_page=3
+  &amp;_embed</code></pre>
+			<h3 class="mt-2">Apoyo</h3>
+			<ul>
+				<li><a href="https://developer.wordpress.org/themes/advanced-topics/child-themes/" target="_blank" rel="noreferrer" class="icon-link">Temas hijo</a></li>
+				<li><a href="https://developer.wordpress.org/themes/features/block-patterns/" target="_blank" rel="noreferrer" class="icon-link">Patrones de bloques</a></li>
+				<li><a href="https://developer.wordpress.org/rest-api/reference/posts/" target="_blank" rel="noreferrer" class="icon-link">REST API: posts</a></li>
+				<li><a href="https://developer.wordpress.org/reference/functions/wp_enqueue_script/" target="_blank" rel="noreferrer" class="icon-link">wp_enqueue_script()</a></li>
+				<li><a href="https://commons.wikimedia.org/" target="_blank" rel="noreferrer" class="icon-link">Wikimedia Commons</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">Tarea 2, complementa la 1. Aprovecha que saben JS: el punto 4 es una primera mirada a WordPress headless. Errores típicos de la IA: encolar mal el CSS del padre, inventar la cabecera del patrón, pegar un script en un bloque HTML.</aside>

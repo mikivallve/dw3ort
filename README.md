@@ -152,3 +152,31 @@ Investigar una herramienta de inteligencia artificial para presentar en clase.
 - Intro a WordPress.
 - Instalación
 - Recorrida
+
+## [Clase 13: WordPress Práctico](https://dw3.netlify.app/#/11)
+
+Taller de 3 horas. Herramientas: Local, navegador, VS Code y un asistente de IA (Claude, ChatGPT o similar).
+
+- **Bloque 1 (30'):** CMS vs. sitio estático, sitio nuevo en Local, ajustes iniciales (enlaces permanentes, zona horaria e idioma, comentarios, pingbacks y trackbacks desactivados).
+- **Bloque 2 (60'):** Páginas vs. entradas, categorías y etiquetas, el Loop. Ejercicio: 1 página, 2 categorías y 2 entradas.
+- **Bloque 3 (75'):** Anatomía de un tema clásico, maquetación con Gutenberg (hero + grilla de 3 columnas), IA para copy y CSS.
+- **Bloque 4 (15'):** Revisión en vivo, errores comunes y checklist de cierre.
+
+### Tarea: de HTML a tema de WordPress
+
+Convertir el sitio estático de los módulos anteriores en un tema básico de WordPress en Local.
+
+1. Crear la carpeta del tema en `wp-content/themes/` (sin espacios ni mayúsculas, ej. `mi-sitio-theme`).
+2. Mover el CSS a esa carpeta como `style.css` y agregarle la cabecera:
+    ```css
+    /*
+    Theme Name: Mi Primer Tema
+    Author: [Nombre]
+    Version: 1.0
+    */
+    ```
+3. Partir el HTML en `header.php` (con `<?php wp_head(); ?>` antes de `</head>`), `index.php` (con `get_header()` y `get_footer()`) y `footer.php` (con `<?php wp_footer(); ?>` antes de `</body>`).
+4. Usar `get_template_directory_uri()` para las rutas a imágenes y `get_stylesheet_uri()` para el CSS.
+5. Activar el tema en _Apariencia > Temas_ y verificar que se vea igual que el sitio original.
+
+**Se evalúa:** que el tema se active sin error fatal de PHP, que el HTML esté bien repartido en los 3 archivos, que estén `wp_head()` y `wp_footer()`, y que no haya rutas rotas a CSS ni imágenes.

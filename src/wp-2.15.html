@@ -1,0 +1,38 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>WordPress</small>Práctico</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Tarea</small>De HTML a tema de WordPress</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<p>Convertir el sitio estático de los módulos anteriores en un tema básico de WordPress, en Local.</p>
+	<div class="cols mt-2">
+		<div class="col-50">
+			<ol>
+				<li><strong>Carpeta del tema:</strong> en <code class="i">wp-content/themes/</code>, crear <code class="i">mi-sitio-theme</code> (sin espacios ni mayúsculas).</li>
+				<li class="mt-1"><strong>style.css:</strong> mover el CSS, renombrarlo y agregar la cabecera.</li>
+				<li class="mt-1"><strong>index.php</strong> en blanco.</li>
+				<li class="mt-1"><strong>Partir el HTML</strong> en <code class="i">header.php</code>, <code class="i">index.php</code> y <code class="i">footer.php</code>.</li>
+				<li class="mt-1"><strong>Activar</strong> en <em>Apariencia &rsaquo; Temas</em> y verificar que se vea igual.</li>
+			</ol>
+		</div>
+		<div class="col-50">
+			<pre><code>/*
+Theme Name: Mi Primer Tema
+Author: [Nombre]
+Version: 1.0
+*/</code></pre>
+			<h3 class="mt-2">Se evalúa</h3>
+			<ul>
+				<li>Se activa sin error fatal de PHP.</li>
+				<li>El HTML está bien repartido en los 3 archivos.</li>
+				<li><code class="i">wp_head()</code> y <code class="i">wp_footer()</code> están.</li>
+				<li>No hay rutas rotas a CSS ni imágenes.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</main>

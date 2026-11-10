@@ -1,0 +1,32 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>WordPress</small>Práctico</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 3</small>Anatomía de un tema clásico</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-40">
+			<pre><code>wp-content/themes/mi-tema/
+├── style.css
+├── index.php
+├── header.php
+├── footer.php
+└── functions.php</code></pre>
+			<p class="mt-2"><small><strong>Ojo:</strong> el tema por defecto (Twenty Twenty-Five) es <em>de bloques</em>: tiene <code class="i">templates/</code>, <code class="i">parts/</code> y <code class="i">theme.json</code>, no <code class="i">header.php</code>. Para ver uno clásico, instalar <em>Twenty Twenty-One</em>.</small></p>
+		</div>
+		<div class="col-60">
+			<ul>
+				<li><strong>style.css</strong>: cabecera obligatoria con nombre, autor y versión del tema, más los estilos.</li>
+				<li class="mt-1"><strong>index.php</strong>: plantilla de respaldo; acá vive el Loop.</li>
+				<li class="mt-1"><strong>header.php / footer.php</strong>: se escriben una vez y se llaman desde todas las vistas con <code class="i">get_header()</code> y <code class="i">get_footer()</code>.</li>
+				<li class="mt-1"><strong>functions.php</strong>: activa funciones del tema (menús, imagen destacada, soporte de bloques).</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">20 min. Abrir la carpeta del sitio en VS Code desde Local (app/public/wp-content/themes).</aside>

@@ -1,0 +1,41 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>WordPress</small>Práctico</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 2</small>El Loop</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-50">
+			<pre><code>[ El usuario pide una URL ]
+            ▼
+[ WP consulta la base de datos ]
+            ▼
+[ ¿Hay entradas? have_posts() ]
+     ▼ Sí              ▼ No
+[ the_post() ]    [ 404 / vacío ]
+     ▼
+[ Título, contenido, metas ]
+     ▼
+[ ¿Hay más? Repetir ]</code></pre>
+		</div>
+		<div class="col-50">
+			<p>El Loop es un <code class="i">while</code> de PHP que recorre lo que devolvió la consulta y le aplica las etiquetas de plantilla a cada entrada.</p>
+			<pre class="mt-2"><code>&lt;?php if ( have_posts() ) : ?&gt;
+  &lt;?php while ( have_posts() ) :
+    the_post(); ?&gt;
+    &lt;h2&gt;&lt;?php the_title(); ?&gt;&lt;/h2&gt;
+    &lt;p&gt;Por &lt;?php the_author(); ?&gt;&lt;/p&gt;
+    &lt;?php the_content(); ?&gt;
+  &lt;?php endwhile; ?&gt;
+&lt;?php else : ?&gt;
+  &lt;p&gt;No hay contenido.&lt;/p&gt;
+&lt;?php endif; ?&gt;</code></pre>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">20 min. La URL decide la consulta: /contacto/ trae 1 página, /category/noticias/ trae N entradas. El mismo Loop sirve para las dos.</aside>

@@ -1,0 +1,35 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>WordPress</small>Práctico</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 3</small>IA para el CSS que falta</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<p>Cuando Gutenberg no tiene el ajuste (una sombra, una transición), se le pide a la IA un snippet chico.</p>
+	<div class="cols mt-2">
+		<div class="col-50">
+			<h3>1. Ponerle una clase al bloque</h3>
+			<p>Bloque &rsaquo; <em>Avanzado</em> &rsaquo; <strong>Clase(s) CSS adicional(es)</strong>: <code class="i">tarjeta</code></p>
+			<h3 class="mt-2">2. Pegar el CSS</h3>
+			<ul>
+				<li>Tema clásico: <em>Apariencia &rsaquo; Personalizar &rsaquo; CSS adicional</em>.</li>
+				<li>Tema de bloques: <em>Apariencia &rsaquo; Editor &rsaquo; Estilos &rsaquo; CSS adicional</em>.</li>
+			</ul>
+		</div>
+		<div class="col-50">
+			<pre><code>.tarjeta {
+  box-shadow: 0 8px 24px rgb(0 0 0 / .12);
+  transition: transform .2s ease;
+}
+.tarjeta:hover {
+  transform: translateY(-4px);
+}</code></pre>
+			<p class="mt-1"><small>Prompt: <em>"Dame CSS para la clase .tarjeta: sombra suave y que suba 4px al pasar el mouse. Solo el CSS."</em></small></p>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">Cierra el bloque 3 (min 165). Insistir en que lean el CSS antes de pegarlo.</aside>

@@ -179,7 +179,7 @@ Investigar WordPress y hacer un pequeño ejercicio en [Local](https://localwp.co
 Taller de 3 horas (en las slides, _clase 11_). Se trabaja con el agente que usen (Claude Code, Codex, Cursor…). Quien no tenga tema hijo lo genera al empezar con el [Astra Child Theme Generator](https://wpastra.com/child-theme-generator/).
 
 - **Bloque 1 (20'):** por qué documentar para agentes: el agente arranca de cero en cada sesión y leer cuesta tokens.
-- **Bloque 2 (40'):** el sistema: `AGENTS.md` como índice (y `CLAUDE.md` con `@AGENTS.md`), reglas para no quemar tokens, reglas de _modo pareja_ (el agente propone, el alumno ejecuta y explica), y `docs/site.md` con lo básico del sitio.
+- **Bloque 2 (40'):** el sistema: `AGENTS.md` como índice (y `CLAUDE.md` con `@AGENTS.md`), reglas para no quemar tokens, reglas de _modo tutor_ (el agente explica y propone, el alumno ejecuta y escribe; las mismas reglas del `AGENTS.md` del parcial), y por qué la IA es tutor en el aula y en el parcial pero libre en las tareas semanales, y `docs/site.md` con lo básico del sitio.
 - **Bloque 3 (25'):** workstreams (`docs/ws/contenido.md`, `tema.md`, `deploy.md`) con comandos de wp-cli probados para correr en el _Site Shell_ de Local; toda tarea cierra actualizando `site.md` y `log.md`.
 - **Bloque 4 (75'):** (pendiente de la clase 13) anatomía de un tema clásico (Astra), ajustar la home de la reserva con Gutenberg (hero + grilla de 3 atractivos), IA para copy (verificando los datos) y CSS.
 
@@ -206,7 +206,7 @@ Taller de 3 horas (en las slides, _clase 12_).
 
 - **Bloque 1 (15'):** (pendiente de la clase 13) revisión en vivo de la home de la reserva, errores comunes y checklist de cierre.
 - **Bloque 2 (20'):** (pendiente de la clase 14) demo del docente: en vivo gratis en un sandbox de [Pantheon](https://pantheon.io/plans/pricing) (`dev-*.pantheonsite.io`) con `wp search-replace … --export=reserva.sql`, código por SFTP, base y `uploads`. Queda en las slides para repetirlo en casa.
-- **Bloque 3 (35'):** cómo es el parcial (3 h, 10 pts de teórico en papel + 40 de práctico sobre un WordPress dado, IA libre, entrega exportando desde Local), cómo usar las 3 horas, dónde está cada cosa en el panel y cómo cazar un error de CSS con DevTools.
+- **Bloque 3 (35'):** cómo es el parcial (3 h, 10 pts de teórico en papel + 40 de práctico sobre un WordPress dado, IA en modo tutor con el `AGENTS.md` del sitio, entrega exportando desde Local), cómo usar las 3 horas, dónde está cada cosa en el panel y cómo cazar un error de CSS con DevTools.
 - **Bloque 4 (75'):** HTML → WordPress: jerarquía de plantillas, la receta para pasar una página a `page-{slug}.php`, errores típicos y práctica con una página de su sitio estático en `reserva-child`.
 - **Bloque 5 (35'):** arranque del simulacro en clase (importar el zip y leer la letra).
 

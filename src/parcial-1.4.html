@@ -1,0 +1,41 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Parcial</small>Preparación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 3 · DevTools</small>Cazar un error de CSS</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-50">
+			<ol>
+				<li class="fragment">Clic derecho sobre lo que se ve mal › <strong>Inspeccionar</strong>.</li>
+				<li class="fragment">En <em>Estilos</em>, buscar la regla culpable: un <code class="i">display: none</code>, un color igual al fondo, un <code class="i">height: 0</code>.</li>
+				<li class="fragment">Mirar <strong>de dónde viene</strong>, a la derecha de la regla (ver la tabla).</li>
+				<li class="fragment">Arreglarla <strong>donde nace</strong>. Pisarla con otra regla deja dos reglas peleando.</li>
+				<li class="fragment">Recargar y revisar otra página que use lo mismo.</li>
+			</ol>
+			<p class="mt-2"><a class="icon-link" href="https://developer.chrome.com/docs/devtools/css" target="_blank" rel="noreferrer">Chrome DevTools: ver y cambiar CSS</a></p>
+		</div>
+		<div class="col-50">
+			<table>
+				<thead>
+					<tr><th>DevTools dice…</th><th>Vive en…</th></tr>
+				</thead>
+				<tbody>
+					<tr><td><code class="i">style.css?ver=…</code></td><td>El tema (archivo)</td></tr>
+					<tr><td><code class="i">&lt;style id="wp-custom-css"&gt;</code></td><td>Personalizar › CSS adicional</td></tr>
+					<tr><td><code class="i">style="…"</code> en el elemento</td><td>El bloque, en el editor</td></tr>
+					<tr><td>Un archivo dentro de <code class="i">plugins/</code></td><td>Un plugin</td></tr>
+				</tbody>
+			</table>
+			<pre class="sm mt-2"><code class="css">/* En DevTools, una regla así es sospechosa */
+.galeria { height: 0; overflow: hidden; }
+.boton { color: #1e5a3a; background: #1e5a3a; }</code></pre>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">Hacerlo en vivo sobre cualquier sitio: agregar una regla rota en CSS adicional y que la encuentren con DevTools. 10 minutos.</aside>

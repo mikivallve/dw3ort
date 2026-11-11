@@ -1,0 +1,27 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Parcial</small>Preparación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 4 · Jerarquía</small>¿Qué plantilla usa WordPress?</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<p>WordPress busca de izquierda a derecha y usa <strong>el primer archivo que exista</strong> en el tema.</p>
+	<table class="mt-2">
+		<thead>
+			<tr><th>Se pide…</th><th>Busca, en orden…</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>Una página <code class="i">/contacto</code></td><td><code class="i">page-contacto.php</code> → <code class="i">page-{id}.php</code> → <code class="i">page.php</code> → <code class="i">singular.php</code> → <code class="i">index.php</code></td></tr>
+			<tr><td>Una entrada</td><td><code class="i">single-post.php</code> → <code class="i">single.php</code> → <code class="i">singular.php</code> → <code class="i">index.php</code></td></tr>
+			<tr><td>Una categoría <code class="i">/category/flora</code></td><td><code class="i">category-flora.php</code> → <code class="i">category.php</code> → <code class="i">archive.php</code> → <code class="i">index.php</code></td></tr>
+			<tr><td>La página de entradas (blog)</td><td><code class="i">home.php</code> → <code class="i">index.php</code></td></tr>
+			<tr><td>La portada</td><td><code class="i">front-page.php</code> → la de arriba que corresponda</td></tr>
+		</tbody>
+	</table>
+	<p class="mt-2"><a class="icon-link" href="https://developer.wordpress.org/themes/basics/template-hierarchy/" target="_blank" rel="noreferrer">Template Hierarchy (Theme Handbook)</a> · <a class="icon-link" href="https://wphierarchy.com/" target="_blank" rel="noreferrer">wphierarchy.com</a></p>
+</div>
+</main>
+<aside class="notes">Pregunta disparadora: "si creo page-contacto.php, ¿qué pasa con /nosotros?". Nada: sigue usando page.php. Esa es la idea para pasar UNA página.</aside>

@@ -171,10 +171,64 @@ Investigar WordPress y hacer un pequeño ejercicio en [Local](https://localwp.co
 
 - **Bloque 1 (30'):** CMS vs. sitio estático, revisión de la tarea (plan B para quien no llegó: sitio nuevo en Local + Astra + starter template), ajustes iniciales (enlaces permanentes, zona horaria e idioma, comentarios, pingbacks y trackbacks desactivados, fuera el contenido demo).
 - **Bloque 2 (60'):** Páginas vs. entradas, categorías y etiquetas, el Loop. Ejercicio en el sitio de la reserva: 1 página, 2 categorías, 2 entradas y una página de entradas (la home del template es portada estática).
-- **Bloque 3 (75'):** Anatomía de un tema clásico (Astra), ajustar la home de la reserva con Gutenberg (hero + grilla de 3 atractivos), IA para copy (verificando los datos) y CSS.
-- **Bloque 4 (15'):** Revisión en vivo, errores comunes y checklist de cierre.
+- ~~Bloque 3 (75')~~ → se dio en la clase 14 (bloque 4).
+- ~~Bloque 4 (15')~~ → se dio en la clase 15 (bloque 1). Las Tareas 1 y 2 quedaron opcionales, para después del parcial (ver al final).
 
-### Tarea 1: de HTML a tema de WordPress
+## [Clase 14: Documentación para agentes + Gutenberg](https://dw3.netlify.app/#/12)
+
+Taller de 3 horas (en las slides, _clase 11_). Se trabaja con el agente que usen (Claude Code, Codex, Cursor…). Quien no tenga tema hijo lo genera al empezar con el [Astra Child Theme Generator](https://wpastra.com/child-theme-generator/).
+
+- **Bloque 1 (20'):** por qué documentar para agentes: el agente arranca de cero en cada sesión y leer cuesta tokens.
+- **Bloque 2 (40'):** el sistema: `AGENTS.md` como índice (y `CLAUDE.md` con `@AGENTS.md`), reglas para no quemar tokens, reglas de _modo pareja_ (el agente propone, el alumno ejecuta y explica), y `docs/site.md` con lo básico del sitio.
+- **Bloque 3 (25'):** workstreams (`docs/ws/contenido.md`, `tema.md`, `deploy.md`) con comandos de wp-cli probados para correr en el _Site Shell_ de Local; toda tarea cierra actualizando `site.md` y `log.md`.
+- **Bloque 4 (75'):** (pendiente de la clase 13) anatomía de un tema clásico (Astra), ajustar la home de la reserva con Gutenberg (hero + grilla de 3 atractivos), IA para copy (verificando los datos) y CSS.
+
+```
+wp-content/themes/reserva-child/
+├── AGENTS.md          ← índice
+├── CLAUDE.md          ← @AGENTS.md
+└── docs/
+    ├── site.md
+    ├── log.md
+    └── ws/
+        ├── contenido.md
+        ├── tema.md
+        └── deploy.md
+```
+
+### Opcional: armar el sistema
+
+Para quien quiera practicar (no entra en el parcial). En `reserva-child/`: escribir `AGENTS.md`, `CLAUDE.md`, `site.md`, `ws/contenido.md` y `ws/tema.md`. Pedirle al agente "quiero sumar 2 especies a Flora y fauna", correr ustedes los comandos y dejar que cierre actualizando la documentación.
+
+## [Clase 15: Puesta en común + Preparación del parcial](https://dw3.netlify.app/#/13)
+
+Taller de 3 horas (en las slides, _clase 12_).
+
+- **Bloque 1 (15'):** (pendiente de la clase 13) revisión en vivo de la home de la reserva, errores comunes y checklist de cierre.
+- **Bloque 2 (20'):** (pendiente de la clase 14) demo del docente: en vivo gratis en un sandbox de [Pantheon](https://pantheon.io/plans/pricing) (`dev-*.pantheonsite.io`) con `wp search-replace … --export=reserva.sql`, código por SFTP, base y `uploads`. Queda en las slides para repetirlo en casa.
+- **Bloque 3 (35'):** cómo es el parcial (3 h, 10 pts de teórico en papel + 40 de práctico sobre un WordPress dado, IA libre, entrega exportando desde Local), cómo usar las 3 horas, dónde está cada cosa en el panel y cómo cazar un error de CSS con DevTools.
+- **Bloque 4 (75'):** HTML → WordPress: jerarquía de plantillas, la receta para pasar una página a `page-{slug}.php`, errores típicos y práctica con una página de su sitio estático en `reserva-child`.
+- **Bloque 5 (35'):** arranque del simulacro en clase (importar el zip y leer la letra).
+
+### Tarea: simulacro (parcial 2025)
+
+Única tarea antes del parcial. Terminar el práctico del [parcial 2025](https://github.com/mikivallve/dw3-parcial-2025) (Manson & Chi Dentistry, 40 pts) con reloj (2 h en total, contando lo que hicieron en clase). Bajar el [sitio](https://drive.google.com/file/d/1DoN-xyUA79YUf1QFhSpN1OMsA7PPS08E/view?usp=sharing), importarlo en Local, resolver y exportar. Anotar las 3 cosas que más costaron.
+
+## [Clase 16: Preparación del parcial](https://dw3.netlify.app/#/14)
+
+Taller de 3 horas (en las slides, _clase 13_).
+
+- **Bloque 1 (30'):** corrección del simulacro: autocorrección con la letra y errores comunes.
+- **Bloque 2 (60'):** contrarreloj: otra página de su sitio estático a `page-{slug}.php` en 45', con corrección cruzada.
+- **Bloque 3 (40'):** repaso teórico con preguntas tipo parcial y las dudas del simulacro.
+- **Bloque 4 (15'):** el día del parcial: checklist de inicio y de entrega.
+- **Bloque 5 (25'):** consultas libres.
+
+## Después del parcial (opcional)
+
+Las dos tareas de la reserva quedan para quien quiera seguir profundizando. No entran en el parcial.
+
+### Opcional · Tarea 1: de HTML a tema de WordPress
 
 Convertir el sitio estático de los módulos anteriores en un tema básico de WordPress en Local.
 
@@ -193,7 +247,7 @@ Convertir el sitio estático de los módulos anteriores en un tema básico de Wo
 
 **Se evalúa:** que el tema se active sin error fatal de PHP, que el HTML esté bien repartido en los 3 archivos, que estén `wp_head()` y `wp_footer()`, y que no haya rutas rotas a CSS ni imágenes.
 
-### Tarea 2: Reserva viva (tema hijo + patrón + avistamientos)
+### Opcional · Tarea 2: Reserva viva (tema hijo + patrón + avistamientos)
 
 Sobre el sitio del área protegida en Local:
 
@@ -214,25 +268,3 @@ Sobre el sitio del área protegida en Local:
 | Avistamientos vía REST + `wp_enqueue_script` condicional | 25% |
 | Contenido real, verificado, con créditos; categorías bien usadas | 15% |
 | `IA.md` honesto + defensa | 15% |
-
-## [Clase 14: Documentación para agentes + En vivo](https://dw3.netlify.app/#/12)
-
-Taller de 3 horas (en las slides, _clase 11_). Se trabaja en el repo de `reserva-child` (Tarea 2) con el agente que usen (Claude Code, Codex, Cursor…).
-
-- **Bloque 1 (20'):** por qué documentar para agentes: el agente arranca de cero en cada sesión y leer cuesta tokens.
-- **Bloque 2 (50'):** el sistema: `AGENTS.md` como índice (y `CLAUDE.md` con `@AGENTS.md`), reglas para no quemar tokens, reglas de _modo pareja_ (el agente propone, el alumno ejecuta y explica), y `docs/site.md` con lo básico del sitio.
-- **Bloque 3 (60'):** workstreams (`docs/ws/contenido.md`, `tema.md`, `deploy.md`) con comandos de wp-cli probados para correr en el _Site Shell_ de Local; toda tarea cierra actualizando `site.md` y `log.md`. Ejercicio: armar el sistema y pedirle al agente "quiero sumar 2 especies a Flora y fauna".
-- **Bloque 4 (50'):** en vivo gratis en un sandbox de [Pantheon](https://pantheon.io/plans/pricing) (`dev-*.pantheonsite.io`): crear el sandbox, `wp search-replace … --export=reserva.sql` desde Local, subir código en modo SFTP, importar base y `uploads`, chequeo final y `ws/deploy.md`.
-
-```
-wp-content/themes/reserva-child/
-├── AGENTS.md          ← índice
-├── CLAUDE.md          ← @AGENTS.md
-└── docs/
-    ├── site.md
-    ├── log.md
-    └── ws/
-        ├── contenido.md
-        ├── tema.md
-        └── deploy.md
-```

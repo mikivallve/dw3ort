@@ -1,0 +1,26 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Parcial</small>Preparación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 4 · Trampas</small>Lo que suele salir mal</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<table>
+		<thead>
+			<tr><th>Síntoma</th><th>Causa</th></tr>
+		</thead>
+		<tbody>
+			<tr class="fragment"><td>Dos headers, o el menú del HTML en vez del de WordPress</td><td>Se pegó el HTML entero, no solo el <code class="i">&lt;main&gt;</code></td></tr>
+			<tr class="fragment"><td>La página sale con la plantilla de siempre</td><td>El slug quedó <code class="i">como-llegar-2</code>, o el archivo está en otro tema</td></tr>
+			<tr class="fragment"><td>Imágenes rotas</td><td>Ruta relativa <code class="i">img/foto.jpg</code>: se busca en <code class="i">/como-llegar/img/</code></td></tr>
+			<tr class="fragment"><td>Todo el sitio cambió de color o de letra</td><td>Se pegó el CSS entero del HTML, con sus estilos generales</td></tr>
+			<tr class="fragment"><td>La primera regla del CSS nuevo no anda</td><td>Se copió a partir de la mitad de un comentario <code class="i">/* … */</code></td></tr>
+			<tr class="fragment"><td>En el tema hijo las imágenes apuntan a Astra</td><td>En un tema hijo va <code class="i">get_stylesheet_directory_uri()</code></td></tr>
+		</tbody>
+	</table>
+</div>
+</main>
+<aside class="notes">La última fila es solo para la práctica de hoy (tema hijo). En el parcial el tema no es hijo, así que va get_template_directory_uri().</aside>

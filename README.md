@@ -179,9 +179,9 @@ Investigar WordPress y hacer un pequeño ejercicio en [Local](https://localwp.co
 Taller de 3 horas (en las slides, _clase 11_). Se trabaja con el agente que usen (Claude Code, Codex, Cursor…). Quien no tenga tema hijo lo genera al empezar con el [Astra Child Theme Generator](https://wpastra.com/child-theme-generator/).
 
 - **Bloque 1 (20'):** por qué documentar para agentes: el agente arranca de cero en cada sesión y leer cuesta tokens.
-- **Bloque 2 (40'):** el sistema: `AGENTS.md` como índice (y `CLAUDE.md` con `@AGENTS.md`), reglas para no quemar tokens, reglas de _modo tutor_ (el agente explica y propone, el alumno ejecuta y escribe; las mismas reglas del `AGENTS.md` del parcial), y por qué la IA es tutor en el aula y en el parcial pero libre en las tareas semanales, y `docs/site.md` con lo básico del sitio.
+- **Bloque 2 (40'):** el sistema: `AGENTS.md` como índice (y `CLAUDE.md` con `@AGENTS.md`), reglas para no quemar tokens, reglas de _modo tutor_ (el agente explica y propone, el alumno ejecuta y escribe; lo mecánico, el agente arma el comando y el alumno lo corre en el Site Shell, porque el agente no llega a la base de Local; las mismas reglas del `AGENTS.md` del parcial), y por qué la IA es tutor en el aula, en el parcial y en el simulacro, pero libre en las tareas semanales, y `docs/site.md` con lo básico del sitio.
 - **Bloque 3 (25'):** workstreams (`docs/ws/contenido.md`, `tema.md`, `deploy.md`) con comandos de wp-cli probados para correr en el _Site Shell_ de Local; toda tarea cierra actualizando `site.md` y `log.md`.
-- **Bloque 4 (75'):** (pendiente de la clase 13) anatomía de un tema clásico (Astra), ajustar la home de la reserva con Gutenberg (hero + grilla de 3 atractivos), IA para copy (verificando los datos) y CSS.
+- **Bloque 4 (75'):** (pendiente de la clase 13) anatomía de un tema clásico (Astra), ajustar la home de la reserva con Gutenberg (hero + grilla de 3 atractivos), IA para copy (verificando los datos) y para revisar el CSS que escriben ellos (modo tutor).
 
 ```
 wp-content/themes/reserva-child/
@@ -206,15 +206,17 @@ Para quien quiera practicar (no entra en el parcial). En `reserva-child/`, parti
 
 Taller de 3 horas (en las slides, _clase 12_).
 
-- **Bloque 1 (15'):** (pendiente de la clase 13) revisión en vivo de la home de la reserva, errores comunes y checklist de cierre.
-- **Bloque 2 (20'):** (pendiente de la clase 14) demo del docente: en vivo gratis en un sandbox de [Pantheon](https://pantheon.io/plans/pricing) (`dev-*.pantheonsite.io`) con `wp search-replace … --export=reserva.sql`, código por SFTP, base y `uploads`. Queda en las slides para repetirlo en casa.
-- **Bloque 3 (35'):** cómo es el parcial (3 h, 10 pts de teórico en papel + 40 de práctico sobre un WordPress dado, IA en modo tutor con el `AGENTS.md` del sitio, entrega exportando desde Local), cómo usar las 3 horas, dónde está cada cosa en el panel y cómo cazar un error de CSS con DevTools.
-- **Bloque 4 (75'):** HTML → WordPress: jerarquía de plantillas, la receta para pasar una página a `page-{slug}.php`, errores típicos y práctica con una página de su sitio estático en `reserva-child`.
-- **Bloque 5 (35'):** arranque del simulacro en clase (importar el zip y leer la letra).
+Total 160', con 20' de margen para el arranque y la pausa.
+
+- **Bloque 1 (10'):** (pendiente de la clase 13) revisión en vivo de la home de la reserva y checklist de cierre.
+- **Bloque 2 (40'):** cómo es el parcial (3 h; 10 pts de teórico en papel, los primeros 20', y 45 de práctico sobre un WordPress dado; suma 55 y la nota es sobre 50; entrega exportando desde Local), las reglas del modo tutor y qué pasa si se saltean (pierde el parcial solo la trampa obvia; lo raro lleva a una defensa), qué cambió respecto de 2025, cómo usar las 3 horas, dónde está cada cosa en el panel y cómo cazar un error de CSS con DevTools.
+- **Bloque 3 (75'):** HTML → WordPress: jerarquía de plantillas, la receta para pasar una página a `page-{slug}.php`, errores típicos y práctica con una página de su sitio estático en `reserva-child`.
+- **Bloque 4 (35'):** arranque del simulacro en clase (importar el zip y leer la letra).
+- **Para casa (opcional):** en vivo gratis en un sandbox de [Pantheon](https://pantheon.io/plans/pricing) (`dev-*.pantheonsite.io`) con `wp search-replace … --export=reserva.sql`, código por SFTP, base y `uploads`. Está en las slides del final de la clase; no entra en el parcial.
 
 ### Tarea: simulacro (parcial 2025)
 
-Única tarea antes del parcial. Terminar el práctico del [parcial 2025](https://github.com/mikivallve/dw3-parcial-2025) (Manson & Chi Dentistry, 40 pts) con reloj (2 h en total, contando lo que hicieron en clase). Bajar el [sitio](https://github.com/mikivallve/dw3-parcial-2025/releases/download/simulacro-2026/simulacro-2025.zip), importarlo en Local, resolver y exportar. Anotar las 3 cosas que más costaron.
+Única tarea antes del parcial. Terminar el práctico del [parcial 2025](https://github.com/mikivallve/dw3-parcial-2025) (Manson & Chi Dentistry, 40 pts) con reloj (2 h en total, contando lo que hicieron en clase), con la IA en modo tutor, como en el parcial. Cuando lo terminen, pueden usar la IA libre para revisarlo. Bajar el [sitio](https://github.com/mikivallve/dw3-parcial-2025/releases/download/simulacro-2026/simulacro-2025.zip), importarlo en Local, resolver y exportar. Anotar las 3 cosas que más costaron.
 
 ## [Clase 16: Preparación del parcial](https://dw3.netlify.app/#/14)
 
@@ -222,9 +224,10 @@ Taller de 3 horas (en las slides, _clase 13_).
 
 - **Bloque 1 (30'):** corrección del simulacro: autocorrección con la letra y errores comunes.
 - **Bloque 2 (60'):** contrarreloj: otra página de su sitio estático a `page-{slug}.php` en 45', con corrección cruzada.
-- **Bloque 3 (40'):** repaso teórico con preguntas tipo parcial y las dudas del simulacro.
-- **Bloque 4 (15'):** el día del parcial: checklist de inicio y de entrega.
-- **Bloque 5 (25'):** consultas libres.
+- **Bloque 3 (15'):** sprint de panel en el sitio del simulacro, con lo que el parcial pide y el simulacro no: crear un Editor, borrar un usuario atribuyendo su contenido, logo con texto alternativo, ícono recortado, una entrada completa y la categoría por defecto.
+- **Bloque 4 (30'):** repaso teórico con preguntas tipo parcial y las dudas del simulacro.
+- **Bloque 5 (15'):** el día del parcial: checklist de inicio y de entrega.
+- **Bloque 6 (20'):** consultas libres (el colchón de la clase).
 
 ## Después del parcial (opcional)
 

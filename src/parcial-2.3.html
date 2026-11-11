@@ -3,7 +3,7 @@
 		<h1 class="lead-title"><small>Parcial</small>Preparación</h1>
 		<div class="separator"></div>
 		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
-		<h2><small>Bloque 4 · Trampas</small>Lo que suele salir mal</h2>
+		<h2><small>Bloque 3 · Trampas</small>Lo que suele salir mal</h2>
 	</div>
 </header>
 <main>
@@ -18,9 +18,9 @@
 			<tr class="fragment"><td>Imágenes rotas</td><td>Ruta relativa <code class="i">img/foto.jpg</code>: se busca en <code class="i">/como-llegar/img/</code></td></tr>
 			<tr class="fragment"><td>Todo el sitio cambió de color o de letra</td><td>Se pegó el CSS entero del HTML, con sus estilos generales</td></tr>
 			<tr class="fragment"><td>La primera regla del CSS nuevo no anda</td><td>Se copió a partir de la mitad de un comentario <code class="i">/* … */</code></td></tr>
-			<tr class="fragment"><td>En el tema hijo las imágenes apuntan a Astra</td><td>En un tema hijo va <code class="i">get_stylesheet_directory_uri()</code></td></tr>
+			<tr class="fragment"><td>En el tema hijo las imágenes apuntan a Astra</td><td>En un tema hijo (la práctica de hoy) va <code class="i">get_stylesheet_directory_uri()</code>. En un tema que no es hijo (el del parcial), <code class="i">get_template_directory_uri()</code></td></tr>
 		</tbody>
 	</table>
 </div>
 </main>
-<aside class="notes">La última fila aplica a la práctica de hoy, que es sobre un tema hijo: ahí va get_stylesheet_directory_uri(). En un tema que no es hijo, get_template_directory_uri().</aside>
+<aside class="notes">La última fila tiene las dos funciones a la vista a propósito: hoy practican en un tema hijo (get_stylesheet_directory_uri()), y el tema del parcial no es hijo (get_template_directory_uri()).</aside>

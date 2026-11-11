@@ -1,0 +1,37 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Parcial</small>Preparación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 2 · Reglas</small>Modo tutor: qué pasa si…</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-50">
+			<h3>La IA en el parcial</h3>
+			<ul>
+				<li><strong>Tutor:</strong> explica, propone y revisa. Lo de la materia lo hacen ustedes.</li>
+				<li><strong>No toca el sitio:</strong> ni conectores, ni MCP, ni plugins. El sitio lo bloquea.</li>
+				<li><strong>wp-cli lo corren ustedes</strong> en el Site Shell. Su IA no llega a la base: si hace falta un comando, se lo arma.</li>
+				<li><strong>No corran <code class="i">/init</code>:</strong> <code class="i">AGENTS.md</code> y <code class="i">CLAUDE.md</code> ya están armados.</li>
+			</ul>
+			<h3 class="mt-2">El sitio lleva una bitácora</h3>
+			<p>Cada 20 minutos anota cuántos cambios hubo y por dónde entraron. En el pie del panel van a ver <em>Modo tutor: intacto ✓</em>.</p>
+		</div>
+		<div class="col-50">
+			<table>
+				<tbody>
+					<tr><td><strong>Pierde el parcial</strong></td><td>Solo la trampa obvia: sacarle reglas a <code class="i">AGENTS.md</code> o <code class="i">CLAUDE.md</code>, tocar los mu-plugins, instalar algo para conectar la IA al sitio (MCP, un conector, contraseñas de aplicación) o tocar la bitácora.</td></tr>
+					<tr><td><strong>Defensa de 2'</strong></td><td>Algo raro en la bitácora, como muchos cambios en segundos: explicar una línea de la plantilla que hicieron. Si no pueden, la parte de HTML → WordPress no suma.</td></tr>
+					<tr><td><strong>Nada</strong></td><td>Un error sin intención: un plugin que no hacía falta, un espacio que cambió el editor.</td></tr>
+				</tbody>
+			</table>
+			<h3 class="mt-2">Qué cambió respecto de 2025</h3>
+			<p>En 2025 se instalaba un plugin y la IA escribía contenido "persuasivo". En 2026 no se instala nada que la letra no pida, y los datos salen de las fuentes: nada inventado.</p>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">5 min. Leer la tabla en voz alta. La regla dura es solo para la trampa obvia: que no lleguen con miedo de equivocarse. En el simulacro van a ver el pie del panel; quien quiera ver la bitácora la abre en el Site Shell con wp eval 'parcial_bitacora_mostrar();'.</aside>

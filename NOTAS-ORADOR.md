@@ -38,7 +38,7 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
 - **Modo tutor: el agente guía** · Bloque 2 · Reglas (`agentes-1.5`)
   Es el slide más importante: con esto el agente sube su nivel en vez de reemplazarlos. Es el mismo modo tutor que trae el AGENTS.md del parcial: que lo practiquen ahora.
 - **Tutor en el aula, libre en casa** · Bloque 2 · Por qué (`agentes-ia-porque`)
-  Analogía de la calculadora: primero se aprende a hacer la cuenta, después la calculadora es libre, y justamente porque sabés hacer la cuenta te das cuenta si el resultado no tiene sentido. El modo tutor no es desconfianza: es la forma de que la IA los haga mejores y no los reemplace. En las tareas la IA es libre, pero se pide documentar cómo la usaron (IA.md, AGENTS.md).
+  Analogía de la calculadora: primero se aprende a hacer la cuenta, después la calculadora es libre, y justamente porque sabés hacer la cuenta te das cuenta si el resultado no tiene sentido. El modo tutor no es desconfianza: es la forma de que la IA los haga mejores y no los reemplace. En las tareas la IA es libre, pero se pide documentar cómo la usaron (IA.md, AGENTS.md). El simulacro no: es un ensayo del parcial, así que va en modo tutor; después pueden revisarlo con la IA libre.
 - **site.md: lo básico** · Bloque 2 (`agentes-1.6`)
   10 min para que escriban el suyo. Muchos datos los sacan con: wp option get home, wp theme list --status=active --fields=name, wp term list category --fields=slug.
 - **Anatomía de un workstream** · Bloque 3 (`agentes-1.7`)
@@ -60,56 +60,60 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
 - **IA como copiloto** · Bloque 4 (`wp-2.12`)
   Parte de los 25 min de IA. Comparar resultados entre dos alumnos con distinta reserva. Pedir que marquen un dato que la IA haya inventado.
 - **IA para el CSS que falta** · Bloque 4 (`wp-2.13`)
-  Cierra el bloque 3 (min 165). Insistir en que lean el CSS antes de pegarlo.
+  Cierra el bloque 4 (min 160). Modo tutor: la IA no escribe el CSS, lo revisa. Si a alguien le da el código igual, mirar si cargó las reglas del modo tutor en su AGENTS.md.
 - **Armar el sistema** · Opcional (`agentes-1.10`)
   Pasar por los puestos mirando una sola cosa: ¿el agente les está pasando los comandos o los está corriendo él? Si los corre él, falta la regla de modo tutor o está mal escrita.
 
 ## Clase 12
 
 - **Agenda** · Taller de 3 horas (`parcial-1.0`)
-  Total 180 min. Los bloques 1 y 2 son lo que quedó pendiente de las clases 10 y 11. El bloque 2 lo hace el docente en pantalla: no entra en el parcial y cada uno lo puede repetir en casa con las slides. Las Tareas 1 y 2 pasaron a opcionales, al final de la clase 13.
+  Total 160 min, con 20 de margen para el arranque y la pausa. El bloque 1 es lo que quedó pendiente de la clase 10. El deploy a Pantheon salió de la clase: no entra en el parcial y queda en las slides del final, para casa. Las Tareas 1 y 2 pasaron a opcionales, al final de la clase 13.
 - **Puesta en común** · Bloque 1 (`wp-2.14`)
-  15 min: 5 de revisión en vivo (2 o 3 alumnos comparten pantalla), 5 de troubleshooting, 5 de checklist.
-- **Dónde, gratis** · Bloque 2 (`deploy-1.0`)
-  Datos de noviembre 2026: Pantheon Silver $0 con 2 sandboxes; para conectar dominio hace falta un plan pago. InstaWP pide tarjeta. Revisar antes de cada semestre.
-- **Crear el sandbox** · Bloque 2 · Pantheon (`deploy-1.1`)
-  Pedir que creen la cuenta antes de la clase si se puede (llegan mails de confirmación). Con 2 sandboxes por cuenta, que no hagan pruebas descartables.
-- **De Local a Pantheon** · Bloque 2 · Práctica guiada (`deploy-1.2`)
-  El orden importa: código primero, después la base (que espera que el tema exista), después uploads. La base viaja con los usuarios: el admin y la contraseña de Local pasan a ser los de Pantheon, así que nada de admin/admin.
-- **Chequeo y workstream** · Bloque 2 (`deploy-1.3`)
-  Cierra la clase. La próxima vez que quieran subir cambios, le piden al agente "subí a Pantheon" y el workstream ya tiene los pasos que hoy probamos.
-- **Cómo es el parcial** · Bloque 3 · Formato (`parcial-1.1`)
+  10 min: 5 de revisión en vivo (2 o 3 alumnos comparten pantalla) y 5 de checklist. El troubleshooting, en las consultas de la clase 13.
+- **Cómo es el parcial** · Bloque 2 · Formato (`parcial-1.1`)
   No adelantar el caso. Sí dejar claro el formato: van a recibir un sitio ajeno con cosas mal hechas, no van a construir uno de cero.
-- **Cómo usar las 3 horas** · Bloque 3 · Estrategia (`parcial-1.2`)
-  Insistir en el minuto 0–15: el error más caro de 2025 fue empezar a cambiar sin haber recorrido el sitio.
-- **Dónde está cada cosa** · Bloque 3 · El panel (`parcial-1.3`)
+- **Modo tutor: qué pasa si…** · Bloque 2 · Reglas (`parcial-1.7`)
+  5 min. Leer la tabla en voz alta. La regla dura es solo para la trampa obvia: que no lleguen con miedo de equivocarse. En el simulacro van a ver el pie del panel; quien quiera ver la bitácora la abre en el Site Shell con wp eval 'parcial_bitacora_mostrar();'.
+- **Cómo usar las 3 horas** · Bloque 2 · Estrategia (`parcial-1.2`)
+  El teórico va adentro de las 3 horas, al principio. Insistir en el minuto 20–35: el error más caro de 2025 fue empezar a cambiar sin haber recorrido el sitio. Recordar que suma 55 sobre 50: trabarse en un punto no es perder el parcial.
+- **Dónde está cada cosa** · Bloque 2 · El panel (`parcial-1.3`)
   Preguntar antes de mostrar cada fila: "¿dónde lo harían?". Las que más fallan: categoría por defecto (está en Escritura, no en Categorías) y borrar un usuario sin perder su contenido.
-- **Cazar un error de CSS** · Bloque 3 · DevTools (`parcial-1.4`)
+- **Cazar un error de CSS** · Bloque 2 · DevTools (`parcial-1.4`)
   Hacerlo en vivo sobre cualquier sitio: agregar una regla rota en CSS adicional y que la encuentren con DevTools. 10 minutos.
-- **¿Qué plantilla usa WordPress?** · Bloque 4 · Jerarquía (`parcial-2.1`)
+- **¿Qué plantilla usa WordPress?** · Bloque 3 · Jerarquía (`parcial-2.1`)
   Pregunta disparadora: "si creo page-contacto.php, ¿qué pasa con /nosotros?". Nada: sigue usando page.php. Esa es la idea para pasar UNA página.
-- **De un HTML a page-{slug}.php** · Bloque 4 · Receta (`parcial-2.2`)
+- **De un HTML a page-{slug}.php** · Bloque 3 · Receta (`parcial-2.2`)
   Mostrarlo en vivo con un HTML cualquiera. Remarcar que no hace falta Template Name: el nombre del archivo ya alcanza.
-- **Lo que suele salir mal** · Bloque 4 · Trampas (`parcial-2.3`)
-  La última fila aplica a la práctica de hoy, que es sobre un tema hijo: ahí va get_stylesheet_directory_uri(). En un tema que no es hijo, get_template_directory_uri().
-- **Manos a la obra** · Bloque 4 · Práctica (`parcial-2.4`)
+- **Lo que suele salir mal** · Bloque 3 · Trampas (`parcial-2.3`)
+  La última fila tiene las dos funciones a la vista a propósito: hoy practican en un tema hijo (get_stylesheet_directory_uri()), y el tema del parcial no es hijo (get_template_directory_uri()).
+- **Manos a la obra** · Bloque 3 · Práctica (`parcial-2.4`)
   Si alguno no tiene su sitio estático a mano, que use cualquier página estática que tenga, o el index.html del repo de clase. Los que terminan: pasar una segunda página.
-- **Parcial 2025** · Bloque 5 · Simulacro (`parcial-1.5`)
+- **Parcial 2025** · Bloque 4 · Simulacro (`parcial-1.5`)
   Lo importante de arrancar en clase: que todos logren importar el zip en Local antes de irse. Si alguien no puede bajarlo, pasarlo por pendrive.
+- **Dónde, gratis** · Para casa · Opcional (`deploy-1.0`)
+  Datos de noviembre 2026: Pantheon Silver $0 con 2 sandboxes; para conectar dominio hace falta un plan pago. InstaWP pide tarjeta. Revisar antes de cada semestre.
+- **Crear el sandbox** · Para casa · Pantheon (`deploy-1.1`)
+  Para casa, no entra en el parcial. Crear la cuenta lleva unos minutos (llegan mails de confirmación). Con 2 sandboxes por cuenta, que no hagan pruebas descartables.
+- **De Local a Pantheon** · Para casa · Paso a paso (`deploy-1.2`)
+  El orden importa: código primero, después la base (que espera que el tema exista), después uploads. La base viaja con los usuarios: el admin y la contraseña de Local pasan a ser los de Pantheon, así que nada de admin/admin.
+- **Chequeo y workstream** · Para casa (`deploy-1.3`)
+  Cierra el deploy. La próxima vez que quieran subir cambios, le piden al agente "subí a Pantheon" y el workstream ya tiene los pasos que hoy probamos.
 
 ## Clase 13
 
 - **Agenda** · Taller de 3 horas (`parcial-2.0`)
-  Total 170 min. Al final del deck están las Tareas 1 y 2, opcionales, para después del parcial. Empezar preguntando qué les costó del simulacro y anotarlo en el pizarrón para el bloque 3.
+  Total 170 min; las consultas son el colchón. Al final del deck están las Tareas 1 y 2, opcionales, para después del parcial. Empezar preguntando qué les costó del simulacro y anotarlo en el pizarrón para el bloque 4.
 - **Qué miramos** · Bloque 1 · Corrección (`parcial-1.6`)
-  Proyectar el sitio de un voluntario y corregir juntos 3 o 4 puntos. Juntar las dudas para el repaso de la clase 13.
+  Proyectar el sitio de un voluntario y corregir juntos 3 o 4 puntos. Juntar las dudas para el repaso del bloque 4.
 - **Otra página, con reloj** · Bloque 2 · Contrarreloj (`parcial-2.8`)
   Es la parte del parcial con código. Si alguno lo termina en menos de 30', ya está listo.
-- **Preguntas tipo (I)** · Bloque 3 · Repaso (`parcial-2.5`)
+- **Lo que el simulacro no pide** · Bloque 3 · Sprint de panel (`parcial-2.9`)
+  Que lo hagan solos y después mostrar en pantalla los dos que más fallan: borrar con "Atribuir todo el contenido a" y la categoría por defecto en Escritura. Si el sitio tiene un solo usuario, que creen dos y borren uno. Para el logo sirve cualquier imagen.
+- **Preguntas tipo (I)** · Bloque 4 · Repaso (`parcial-2.5`)
   Que respondan en papel 2 minutos por pregunta, sin dispositivos, como en el parcial. Después mostrar la respuesta.
-- **Preguntas tipo (II)** · Bloque 3 · Repaso (`parcial-2.6`)
+- **Preguntas tipo (II)** · Bloque 4 · Repaso (`parcial-2.6`)
   Cerrar el bloque con las dudas que juntamos al corregir el simulacro.
-- **El día del parcial** · Bloque 4 · Checklist (`parcial-2.7`)
+- **El día del parcial** · Bloque 5 · Checklist (`parcial-2.7`)
   Si el export de Local falla en el laboratorio: comprimir la carpeta del sitio y además exportar la base desde Database › Adminer. Avisar que existe el plan B, pero que no cuenten con él.
 - **Reserva viva** · Opcional · Tarea 2 (`wp-2.17`)
   Tarea 2, complementa la 1. Aprovecha que saben JS: el punto 4 es una primera mirada a WordPress headless. Errores típicos de la IA: encolar mal el CSS del padre, inventar la cabecera del patrón, pegar un script en un bloque HTML.

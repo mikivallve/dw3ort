@@ -1,0 +1,68 @@
+<header class="bg-005">
+	<div class="container">
+		<h1 class="lead-title"><small>Agentes</small>Documentación</h1>
+		<div class="separator"></div>
+		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
+		<h2><small>Bloque 3 · Ejemplo completo</small>Un workstream de código</h2>
+	</div>
+</header>
+<main>
+<div class="wp-wrap">
+	<div class="cols">
+		<div class="col-60">
+			<pre class="sm"><code># ws/tema
+Cuándo: CSS, functions.php, patrones o plantillas.
+Leer: docs/site.md (Tema) y el archivo a tocar,
+por rango. Nunca themes/astra/.
+
+## Antes de tocar código
+1. ¿Se puede sin código? Personalizar (Astra) o
+   el editor de bloques: guiá por ahí y terminá.
+2. Preguntá "¿cómo lo harías vos?".
+3. Ejemplos de hasta ~10 líneas, con otros nombres.
+
+## Dónde va cada cosa
+- Estilos: style.css del hijo, prefijo .reserva-
+- Cargar CSS y JS: wp_enqueue_style / _script
+- JS de una página: is_front_page(), is_page()
+- Patrones: patterns/{nombre}.php
+- Página puntual: page-{slug}.php
+- Rutas: get_stylesheet_directory_uri()
+
+## Comandos
+grep -n "reserva-tarjeta" style.css
+wp theme list --status=active --fields=name
+
+## Errores típicos
+- CSS que no aplica: especificidad de Astra o
+  caché; mirá el inspector.
+- Imagen rota: ruta relativa sin la función.
+- Pantalla blanca: WP_DEBUG en wp-config.php.
+
+## Cierre (obligatorio)
+- site.md › Tema: archivos o clases nuevas.
+- log.md: fecha · qué · escribió / revisó.</code></pre>
+		</div>
+		<div class="col-40">
+			<h3>El kit de la reserva</h3>
+			<pre class="sm"><code>reserva-child/
+├── AGENTS.md
+├── CLAUDE.md        @AGENTS.md
+├── .gitignore       *.sql, *.zip
+└── docs/
+    ├── site.md
+    ├── log.md
+    └── ws/
+        ├── contenido.md
+        ├── tema.md
+        └── deploy.md</code></pre>
+			<ul class="mt-1">
+				<li><strong>Primero sin código:</strong> el workstream manda a Personalizar antes que a <code class="i">style.css</code>.</li>
+				<li class="mt-1"><strong>Dónde va cada cosa:</strong> las buenas prácticas, escritas una vez.</li>
+			</ul>
+			<p class="mt-1"><a class="icon-link" href="https://github.com/mikivallve/dw3ort/tree/master/ejemplos/reserva-child" target="_blank" rel="noreferrer">Ver los 8 archivos</a></p>
+		</div>
+	</div>
+</div>
+</main>
+<aside class="notes">contenido.md y deploy.md ya los vimos; este es el que más ayuda en el día a día porque frena al agente antes de escribir código que se resolvía en Personalizar.</aside>

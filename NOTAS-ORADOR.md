@@ -47,6 +47,10 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
   Ojo con db export: el .sql queda en la carpeta del tema, así que *.sql tiene que estar en el .gitignore antes del primer commit.
 - **Cerrar = documentar** · Bloque 3 (`agentes-1.9`)
   La próxima sesión arranca leyendo esto: el agente sabe dónde quedaron sin explorar. Si un comando del workstream estaba mal, se corrige ahí: la doc mejora con el uso.
+- **AGENTS.md de la reserva** · Bloque 3 · Ejemplo completo (`agentes-kit-1`)
+  Es lo que armamos por partes en los slides anteriores, ensamblado. Que lo copien del repo y lo adapten a su reserva: cambiar nombre, Local y workstreams; las reglas quedan igual.
+- **Un workstream de código** · Bloque 3 · Ejemplo completo (`agentes-kit-2`)
+  contenido.md y deploy.md ya los vimos; este es el que más ayuda en el día a día porque frena al agente antes de escribir código que se resolvía en Personalizar.
 - **Anatomía de un tema clásico** · Bloque 4 (`wp-2.9`)
   20 min. Abrir la carpeta del sitio de la reserva en VS Code desde Local (app/public/wp-content/themes/astra). No editar Astra directo: se pierde al actualizar (para eso existen los temas hijo).
 - **Maquetar con Gutenberg** · Bloque 4 (`wp-2.10`)

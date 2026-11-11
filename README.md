@@ -196,9 +196,11 @@ wp-content/themes/reserva-child/
         └── deploy.md
 ```
 
+**Ejemplo completo:** los 8 archivos de la reserva (`AGENTS.md`, `CLAUDE.md`, `.gitignore`, `site.md`, `log.md` y los tres workstreams) están en [`ejemplos/reserva-child/`](ejemplos/reserva-child/), listos para copiar y adaptar.
+
 ### Opcional: armar el sistema
 
-Para quien quiera practicar (no entra en el parcial). En `reserva-child/`: escribir `AGENTS.md`, `CLAUDE.md`, `site.md`, `ws/contenido.md` y `ws/tema.md`. Pedirle al agente "quiero sumar 2 especies a Flora y fauna", correr ustedes los comandos y dejar que cierre actualizando la documentación.
+Para quien quiera practicar (no entra en el parcial). En `reserva-child/`, partiendo del [ejemplo completo](ejemplos/reserva-child/): adaptar `AGENTS.md`, `CLAUDE.md`, `site.md`, `ws/contenido.md` y `ws/tema.md`. Pedirle al agente "quiero sumar 2 especies a Flora y fauna", correr ustedes los comandos y dejar que cierre actualizando la documentación.
 
 ## [Clase 15: Puesta en común + Preparación del parcial](https://dw3.netlify.app/#/13)
 
@@ -212,7 +214,7 @@ Taller de 3 horas (en las slides, _clase 12_).
 
 ### Tarea: simulacro (parcial 2025)
 
-Única tarea antes del parcial. Terminar el práctico del [parcial 2025](https://github.com/mikivallve/dw3-parcial-2025) (Manson & Chi Dentistry, 40 pts) con reloj (2 h en total, contando lo que hicieron en clase). Bajar el [sitio](https://drive.google.com/file/d/1DoN-xyUA79YUf1QFhSpN1OMsA7PPS08E/view?usp=sharing), importarlo en Local, resolver y exportar. Anotar las 3 cosas que más costaron.
+Única tarea antes del parcial. Terminar el práctico del [parcial 2025](https://github.com/mikivallve/dw3-parcial-2025) (Manson & Chi Dentistry, 40 pts) con reloj (2 h en total, contando lo que hicieron en clase). Bajar el [sitio](https://github.com/mikivallve/dw3-parcial-2025/releases/download/simulacro-2026/simulacro-2025.zip), importarlo en Local, resolver y exportar. Anotar las 3 cosas que más costaron.
 
 ## [Clase 16: Preparación del parcial](https://dw3.netlify.app/#/14)
 

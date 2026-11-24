@@ -1,4 +1,4 @@
-/* Estilos generales del sitio estático: NO van al tema (cambiarían toda la reserva). */
+/* Estilos generales */
 body {
 	font-family: Georgia, serif;
 	background: #f4efe4;
@@ -11,7 +11,7 @@ header nav a {
 	color: #2f5d34;
 }
 
-/* Estilos de la página Cómo llegar: SÍ van al style.css del tema. */
+/* Página Cómo llegar */
 .como-llegar {
 	max-width: 760px;
 	margin: 2rem auto;

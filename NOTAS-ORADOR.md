@@ -67,19 +67,15 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
 ## Clase 12
 
 - **Agenda** · Taller de 3 horas (`parcial-1.0`)
-  Total 160 min, con 20 de margen para el arranque y la pausa. El bloque 1 es lo que quedó pendiente de la clase 10. El deploy a Pantheon salió de la clase: no entra en el parcial y queda en las slides del final, para casa. Las Tareas 1 y 2 pasaron a opcionales, al final de la clase 13.
+  Total 160 min, con 20 de margen para el arranque y la pausa. El bloque 1 repasa las tareas de la semana (reserva y Arrocera Fantasía): cubren media parte de panel del parcial. El panel de memoria y DevTools pasaron a la clase 13, como práctica. El deploy a Pantheon no entra en el parcial: sus slides quedan al final, de referencia para la tarea. Las Tareas 1 y 2 de la reserva (tema y reserva viva) siguen opcionales, al final de la clase 13.
 - **Puesta en común** · Bloque 1 (`wp-2.14`)
-  10 min: 5 de revisión en vivo (2 o 3 alumnos comparten pantalla) y 5 de checklist. El troubleshooting, en las consultas de la clase 13.
+  20 min. 2 o 3 alumnos comparten pantalla (uno con la reserva, uno con las recetas). Preguntar antes de mostrar cada fragmento. Rol de Marta y Raúl es casi la pregunta 3 del teórico: no decirlo, pero insistir en Editor vs. Autor. La 404.php es el puente al bloque 3. Si alguien tiene 404 en todo: Ajustes › Enlaces permanentes › Guardar.
 - **Cómo es el parcial** · Bloque 2 · Formato (`parcial-1.1`)
-  No adelantar el caso. Sí dejar claro el formato: van a recibir un sitio ajeno con cosas mal hechas, no van a construir uno de cero.
+  No adelantar el caso. Sí dejar claro el formato: van a recibir un sitio ajeno con cosas mal hechas, no van a construir uno de cero. No hay que redactar: los textos vienen dados; se evalúa cargarlos bien.
 - **Modo tutor: qué pasa si…** · Bloque 2 · Reglas (`parcial-1.7`)
   5 min. Leer la tabla en voz alta. La regla dura es solo para la trampa obvia: que no lleguen con miedo de equivocarse. En el simulacro van a ver el pie del panel; quien quiera ver la bitácora la abre en el Site Shell con wp eval 'parcial_bitacora_mostrar();'.
 - **Cómo usar las 3 horas** · Bloque 2 · Estrategia (`parcial-1.2`)
   El teórico va adentro de las 3 horas, al principio. Insistir en el minuto 20–35: el error más caro de 2025 fue empezar a cambiar sin haber recorrido el sitio. Recordar que suma 55 sobre 50: trabarse en un punto no es perder el parcial.
-- **Dónde está cada cosa** · Bloque 2 · El panel (`parcial-1.3`)
-  Preguntar antes de mostrar cada fila: "¿dónde lo harían?". Las que más fallan: categoría por defecto (está en Escritura, no en Categorías) y borrar un usuario sin perder su contenido.
-- **Cazar un error de CSS** · Bloque 2 · DevTools (`parcial-1.4`)
-  Hacerlo en vivo sobre cualquier sitio: agregar una regla rota en CSS adicional y que la encuentren con DevTools. 10 minutos.
 - **¿Qué plantilla usa WordPress?** · Bloque 3 · Jerarquía (`parcial-2.1`)
   Pregunta disparadora: "si creo page-contacto.php, ¿qué pasa con /nosotros?". Nada: sigue usando page.php. Esa es la idea para pasar UNA página.
 - **De un HTML a page-{slug}.php** · Bloque 3 · Receta (`parcial-2.2`)
@@ -89,7 +85,7 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
 - **Manos a la obra** · Bloque 3 · Práctica (`parcial-2.4`)
   Si alguno no tiene su sitio estático a mano, que use cualquier página estática que tenga, o el index.html del repo de clase. Los que terminan: pasar una segunda página.
 - **Parcial 2025** · Bloque 4 · Simulacro (`parcial-1.5`)
-  Lo importante de arrancar en clase: que todos logren importar el zip en Local antes de irse. Si alguien no puede bajarlo, pasarlo por pendrive.
+  Lo importante de arrancar en clase: que todos logren importar el zip en Local antes de irse. Si alguien no puede bajarlo, pasarlo por pendrive. Con 50' en clase, la mayoría llega a terminar la parte A acá. Ojo: el WordPress del simulacro es viejo; como el 7 se saltea, no hace falta Duplicate Post.
 - **Dónde, gratis** · Para casa · Opcional (`deploy-1.0`)
   Datos de noviembre 2026: Pantheon Silver $0 con 2 sandboxes; para conectar dominio hace falta un plan pago. InstaWP pide tarjeta. Revisar antes de cada semestre.
 - **Crear el sandbox** · Para casa · Pantheon (`deploy-1.1`)
@@ -102,13 +98,17 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
 ## Clase 13
 
 - **Agenda** · Taller de 3 horas (`parcial-2.0`)
-  Total 170 min; las consultas son el colchón. Al final del deck están las Tareas 1 y 2, opcionales, para después del parcial. Empezar preguntando qué les costó del simulacro y anotarlo en el pizarrón para el bloque 4.
+  Total 155 min + 15 de margen; las consultas son el colchón. Al final del deck están las Tareas 1 y 2, opcionales, para después del parcial. Empezar preguntando qué les costó del simulacro y anotarlo en el pizarrón para el bloque 4.
 - **Qué miramos** · Bloque 1 · Corrección (`parcial-1.6`)
   Proyectar el sitio de un voluntario y corregir juntos 3 o 4 puntos. Juntar las dudas para el repaso del bloque 4.
 - **Otra página, con reloj** · Bloque 2 · Contrarreloj (`parcial-2.8`)
-  Es la parte del parcial con código. Si alguno lo termina en menos de 30', ya está listo.
+  Es la parte del parcial con código (15 de 45 puntos del práctico). Ya lo practicaron en la clase 12: 30' alcanza. El que no llega, sabe qué repasar.
+- **Cazar un error de CSS** · Bloque 3 · DevTools (`parcial-1.4`)
+  10 minutos, abre el sprint de panel (clase 13). En parejas, en el sitio del simulacro: cada uno agrega una regla rota en CSS adicional del sitio del otro (sin decir dónde) y el otro la caza con DevTools y la arregla donde nace.
 - **Lo que el simulacro no pide** · Bloque 3 · Sprint de panel (`parcial-2.9`)
-  Que lo hagan solos y después mostrar en pantalla los dos que más fallan: borrar con "Atribuir todo el contenido a" y la categoría por defecto en Escritura. Si el sitio tiene un solo usuario, que creen dos y borren uno. Para el logo sirve cualquier imagen.
+  Después de los 10' de DevTools. Que lo hagan solos y después mostrar en pantalla los dos que más fallan: borrar con "Atribuir todo el contenido a" y la categoría por defecto en Escritura. Para el logo sirve cualquier imagen. Cerrar con la slide "Dónde está cada cosa" como repaso.
+- **Dónde está cada cosa** · Bloque 3 · El panel (`parcial-1.3`)
+  Cierre del sprint de panel (clase 13). Preguntar antes de mostrar cada fila: "¿dónde lo harían?". Las que más fallan: categoría por defecto (está en Escritura, no en Categorías) y borrar un usuario sin perder su contenido.
 - **Preguntas tipo (I)** · Bloque 4 · Repaso (`parcial-2.5`)
   Que respondan en papel 2 minutos por pregunta, sin dispositivos, como en el parcial. Después mostrar la respuesta.
 - **Preguntas tipo (II)** · Bloque 4 · Repaso (`parcial-2.6`)

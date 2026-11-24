@@ -208,25 +208,25 @@ Taller de 3 horas (en las slides, _clase 12_).
 
 Total 160', con 20' de margen para el arranque y la pausa.
 
-- **Bloque 1 (10'):** (pendiente de la clase 13) revisión en vivo de la home de la reserva y checklist de cierre.
-- **Bloque 2 (40'):** cómo es el parcial (3 h; 10 pts de teórico en papel, los primeros 20', y 45 de práctico sobre un WordPress dado; suma 55 y la nota es sobre 50; entrega exportando desde Local), las reglas del modo tutor y qué pasa si se saltean (pierde el parcial solo la trampa obvia; lo raro lleva a una defensa), qué cambió respecto de 2025, cómo usar las 3 horas, dónde está cada cosa en el panel y cómo cazar un error de CSS con DevTools.
+- **Bloque 1 (20'):** puesta en común de las tareas de la semana (enviadas el 17/11): en la reserva, categorías Fauna y Flora, etiquetas raro y común con ítems de menú a `/tag/…`, usuarios Marta (Editor) y Raúl (Autor) y `404.php` en el tema hijo; en Pantheon, el centro de recetas de la Arrocera Fantasía con Understrap (páginas vs. entradas, categorías por tipo de plato y etiquetas para cruzar filtros).
+- **Bloque 2 (15'):** cómo es el parcial (3 h; 10 pts de teórico en papel, los primeros 20', y 45 de práctico sobre un WordPress dado; suma 55 y la nota es sobre 50; entrega exportando desde Local), las reglas del modo tutor y qué pasa si se saltean (pierde el parcial solo la trampa obvia; lo raro lleva a una defensa), qué cambió respecto de 2025 (no se instala nada ni se redacta: el contenido viene dado) y cómo usar las 3 horas.
 - **Bloque 3 (75'):** HTML → WordPress: jerarquía de plantillas, la receta para pasar una página a `page-{slug}.php`, errores típicos y práctica con una página de su sitio estático en `reserva-child`.
-- **Bloque 4 (35'):** arranque del simulacro en clase (importar el zip y leer la letra).
-- **Para casa (opcional):** en vivo gratis en un sandbox de [Pantheon](https://pantheon.io/plans/pricing) (`dev-*.pantheonsite.io`) con `wp search-replace … --export=reserva.sql`, código por SFTP, base y `uploads`. Está en las slides del final de la clase; no entra en el parcial.
+- **Bloque 4 (50'):** arranque del simulacro en clase (importar el zip, leer la letra y empezar).
+- **Referencia:** las slides de [Pantheon](https://pantheon.io/plans/pricing) (`dev-*.pantheonsite.io`, `wp search-replace … --export=reserva.sql`, código por SFTP, base y `uploads`) quedan al final de la clase, para la tarea de la semana. No entra en el parcial.
 
 ### Tarea: simulacro (parcial 2025)
 
-Única tarea antes del parcial. Terminar el práctico del [parcial 2025](https://github.com/mikivallve/dw3-parcial-2025) (Manson & Chi Dentistry, 40 pts) con reloj (2 h en total, contando lo que hicieron en clase), con la IA en modo tutor, como en el parcial. Cuando lo terminen, pueden usar la IA libre para revisarlo. Bajar el [sitio](https://github.com/mikivallve/dw3-parcial-2025/releases/download/simulacro-2026/simulacro-2025.zip), importarlo en Local, resolver y exportar. Anotar las 3 cosas que más costaron.
+Única tarea antes del parcial. Hacer **la parte del [parcial 2025](https://github.com/mikivallve/dw3-parcial-2025) que se parece al de 2026** (Manson & Chi Dentistry): los puntos 1, 3, 4, 5 y del 8 al 12 (27 pts). Se saltean el 2 (CPT), el 6 (reseñas) y el 7 (plugin y contenido con IA). Con reloj: 1 h 30 en total, contando lo que hicieron en clase. IA en modo tutor, como en el parcial; cuando lo terminen, pueden usarla libre para revisarlo. Bajar el [sitio](https://github.com/mikivallve/dw3-parcial-2025/releases/download/simulacro-2026/simulacro-2025.zip), importarlo en Local, resolver y exportar. Anotar las 3 cosas que más costaron.
 
 ## [Clase 16: Preparación del parcial](https://dw3.netlify.app/#/14)
 
 Taller de 3 horas (en las slides, _clase 13_).
 
-- **Bloque 1 (30'):** corrección del simulacro: autocorrección con la letra y errores comunes.
-- **Bloque 2 (60'):** contrarreloj: otra página de su sitio estático a `page-{slug}.php` en 45', con corrección cruzada.
-- **Bloque 3 (15'):** sprint de panel en el sitio del simulacro, con lo que el parcial pide y el simulacro no: crear un Editor, borrar un usuario atribuyendo su contenido, logo con texto alternativo, ícono recortado, una entrada completa y la categoría por defecto.
-- **Bloque 4 (30'):** repaso teórico con preguntas tipo parcial y las dudas del simulacro.
-- **Bloque 5 (15'):** el día del parcial: checklist de inicio y de entrega.
+- **Bloque 1 (25'):** corrección del simulacro: autocorrección con la letra y errores comunes.
+- **Bloque 2 (40'):** contrarreloj: otra página de su sitio estático a `page-{slug}.php` en 30', con 10' de corrección cruzada.
+- **Bloque 3 (40'):** cazar un error de CSS con DevTools en parejas (10') y sprint de panel en el sitio del simulacro (30'), con lo que el parcial pide y el simulacro no: un Editor y un Autor, borrar el Autor atribuyendo su contenido, logo con texto alternativo, ícono recortado, una entrada completa a partir de una publicación de Instagram (texto y foto tal cual) y la categoría por defecto. Cierra con "dónde está cada cosa en el panel".
+- **Bloque 4 (20'):** repaso teórico con preguntas tipo parcial y las dudas del simulacro.
+- **Bloque 5 (10'):** el día del parcial: checklist de inicio y de entrega.
 - **Bloque 6 (20'):** consultas libres (el colchón de la clase).
 
 ## Después del parcial (opcional)

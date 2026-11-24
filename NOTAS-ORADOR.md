@@ -67,9 +67,9 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
 ## Clase 12
 
 - **Agenda** · Taller de 3 horas (`parcial-1.0`)
-  Total 160 min, con 20 de margen para el arranque y la pausa. El bloque 1 repasa las tareas de la semana (reserva y Arrocera Fantasía): cubren media parte de panel del parcial. El panel de memoria y DevTools pasaron a la clase 13, como práctica. El deploy a Pantheon no entra en el parcial: sus slides quedan al final, de referencia para la tarea. Las Tareas 1 y 2 de la reserva (tema y reserva viva) siguen opcionales, al final de la clase 13.
+  Total 160 min, con 20 de margen para el arranque y la pausa. Lo primero, antes de saludar: que arranquen la descarga del zip del simulacro (300 MB por alumno en el mismo wifi; si no, se come el bloque 4). Lo importan en Local en la pausa. Si el wifi no da, pasarlo por pendrive. Los bloques 1 y 2 van cortos (15' y 10') para que el simulacro tenga 60'. El bloque 1 repasa las tareas de la semana (reserva y Arrocera Fantasía): cubren media parte de panel del parcial. El panel de memoria y DevTools pasaron a la clase 13, como práctica. El deploy a Pantheon no entra en el parcial: sus slides quedan al final, de referencia, pero no son una tarea. Las Tareas 1 y 2 de la reserva (tema y reserva viva) siguen opcionales, al final de la clase 13.
 - **Puesta en común** · Bloque 1 (`wp-2.14`)
-  20 min. 2 o 3 alumnos comparten pantalla (uno con la reserva, uno con las recetas). Preguntar antes de mostrar cada fragmento. Rol de Marta y Raúl es casi la pregunta 3 del teórico: no decirlo, pero insistir en Editor vs. Autor. La 404.php es el puente al bloque 3. Si alguien tiene 404 en todo: Ajustes › Enlaces permanentes › Guardar.
+  15 min. 2 o 3 alumnos comparten pantalla (uno con la reserva, uno con las recetas). Preguntar antes de mostrar cada fragmento. Rol de Marta y Raúl es casi la pregunta 3 del teórico: no decirlo, pero insistir en Editor vs. Autor. La 404.php es el puente al bloque 3. Si alguien tiene 404 en todo: Ajustes › Enlaces permanentes › Guardar.
 - **Cómo es el parcial** · Bloque 2 · Formato (`parcial-1.1`)
   No adelantar el caso. Sí dejar claro el formato: van a recibir un sitio ajeno con cosas mal hechas, no van a construir uno de cero. No hay que redactar: los textos vienen dados; se evalúa cargarlos bien.
 - **Modo tutor: qué pasa si…** · Bloque 2 · Reglas (`parcial-1.7`)
@@ -77,15 +77,15 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
 - **Cómo usar las 3 horas** · Bloque 2 · Estrategia (`parcial-1.2`)
   El teórico va adentro de las 3 horas, al principio. Insistir en el minuto 20–35: el error más caro de 2025 fue empezar a cambiar sin haber recorrido el sitio. Recordar que suma 55 sobre 50: trabarse en un punto no es perder el parcial.
 - **¿Qué plantilla usa WordPress?** · Bloque 3 · Jerarquía (`parcial-2.1`)
-  Pregunta disparadora: "si creo page-contacto.php, ¿qué pasa con /nosotros?". Nada: sigue usando page.php. Esa es la idea para pasar UNA página.
+  Pregunta disparadora: "si creo page-contacto.php, ¿qué pasa con /nosotros?". Nada: sigue usando page.php. Esa es la idea para pasar UNA página. Las filas de etiqueta y 404 conectan con la tarea: el menú a /tag/raro/ funciona sin tag.php porque cae en archive.php o index.php.
 - **De un HTML a page-{slug}.php** · Bloque 3 · Receta (`parcial-2.2`)
-  Mostrarlo en vivo con un HTML cualquiera. Remarcar que no hace falta Template Name: el nombre del archivo ya alcanza.
+  Mostrarlo en vivo con un HTML cualquiera. Remarcar que no hace falta Template Name: el nombre del archivo ya alcanza. Insistir con la función de la ruta: hoy practican en reserva-child, así que va get_stylesheet_directory_uri(); con get_template_directory_uri() las imágenes se buscan en Astra y salen rotas. En el parcial el tema no es hijo y va get_template_directory_uri().
 - **Lo que suele salir mal** · Bloque 3 · Trampas (`parcial-2.3`)
-  La última fila tiene las dos funciones a la vista a propósito: hoy practican en un tema hijo (get_stylesheet_directory_uri()), y el tema del parcial no es hijo (get_template_directory_uri()).
+  La última fila tiene las dos funciones a la vista a propósito: hoy practican en un tema hijo (get_stylesheet_directory_uri()), y el tema del parcial no es hijo (get_template_directory_uri()). Las filas de .ast-container y del prefijo son las que más aparecieron al simular la práctica con Astra.
 - **Manos a la obra** · Bloque 3 · Práctica (`parcial-2.4`)
-  Si alguno no tiene su sitio estático a mano, que use cualquier página estática que tenga, o el index.html del repo de clase. Los que terminan: pasar una segunda página.
+  Si alguno no tiene su sitio estático a mano, que use ejemplos/como-llegar/ del repo (página chica con header, footer y CSS general a propósito, para que aparezcan las trampas). Si no tiene reserva-child, ejemplos/reserva-child/ trae style.css y functions.php mínimos para copiar a wp-content/themes/ y activarlo. Los que terminan: pasar una segunda página.
 - **Parcial 2025** · Bloque 4 · Simulacro (`parcial-1.5`)
-  Lo importante de arrancar en clase: que todos logren importar el zip en Local antes de irse. Si alguien no puede bajarlo, pasarlo por pendrive. Con 50' en clase, la mayoría llega a terminar la parte A acá. Ojo: el WordPress del simulacro es viejo; como el 7 se saltea, no hace falta Duplicate Post.
+  Lo importante de arrancar en clase: que todos logren importar el zip en Local antes de irse. Si alguien no puede bajarlo, pasarlo por pendrive. Si la descarga se hizo al entrar y la importación en la pausa, con 60' en clase la mayoría termina los ajustes y la parte A acá. Los ajustes del parcial 2026 no están en la letra 2025: son la parte A del parcial (5 pts) y no se practica en otro lado. Ojo: el WordPress del simulacro es viejo; como el 7 se saltea, no hace falta Duplicate Post.
 - **Dónde, gratis** · Para casa · Opcional (`deploy-1.0`)
   Datos de noviembre 2026: Pantheon Silver $0 con 2 sandboxes; para conectar dominio hace falta un plan pago. InstaWP pide tarjeta. Revisar antes de cada semestre.
 - **Crear el sandbox** · Para casa · Pantheon (`deploy-1.1`)

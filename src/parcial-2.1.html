@@ -17,6 +17,8 @@
 			<tr><td>Una página <code class="i">/contacto</code></td><td><code class="i">page-contacto.php</code> → <code class="i">page-{id}.php</code> → <code class="i">page.php</code> → <code class="i">singular.php</code> → <code class="i">index.php</code></td></tr>
 			<tr><td>Una entrada</td><td><code class="i">single-post.php</code> → <code class="i">single.php</code> → <code class="i">singular.php</code> → <code class="i">index.php</code></td></tr>
 			<tr><td>Una categoría <code class="i">/category/flora</code></td><td><code class="i">category-flora.php</code> → <code class="i">category.php</code> → <code class="i">archive.php</code> → <code class="i">index.php</code></td></tr>
+			<tr><td>Una etiqueta <code class="i">/tag/raro</code></td><td><code class="i">tag-raro.php</code> → <code class="i">tag.php</code> → <code class="i">archive.php</code> → <code class="i">index.php</code></td></tr>
+			<tr><td>Una dirección que no existe</td><td><code class="i">404.php</code> → <code class="i">index.php</code></td></tr>
 			<tr><td>La página de entradas (blog)</td><td><code class="i">home.php</code> → <code class="i">index.php</code></td></tr>
 			<tr><td>La portada</td><td><code class="i">front-page.php</code> → la de arriba que corresponda</td></tr>
 		</tbody>
@@ -24,4 +26,4 @@
 	<p class="mt-2"><a class="icon-link" href="https://developer.wordpress.org/themes/basics/template-hierarchy/" target="_blank" rel="noreferrer">Template Hierarchy (Theme Handbook)</a> · <a class="icon-link" href="https://wphierarchy.com/" target="_blank" rel="noreferrer">wphierarchy.com</a></p>
 </div>
 </main>
-<aside class="notes">Pregunta disparadora: "si creo page-contacto.php, ¿qué pasa con /nosotros?". Nada: sigue usando page.php. Esa es la idea para pasar UNA página.</aside>
+<aside class="notes">Pregunta disparadora: "si creo page-contacto.php, ¿qué pasa con /nosotros?". Nada: sigue usando page.php. Esa es la idea para pasar UNA página. Las filas de etiqueta y 404 conectan con la tarea: el menú a /tag/raro/ funciona sin tag.php porque cae en archive.php o index.php.</aside>

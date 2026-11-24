@@ -17,10 +17,12 @@
 			<tr class="fragment"><td>La página sale con la plantilla de siempre</td><td>El slug quedó <code class="i">como-llegar-2</code>, o el archivo está en otro tema</td></tr>
 			<tr class="fragment"><td>Imágenes rotas</td><td>Ruta relativa <code class="i">img/foto.jpg</code>: se busca en <code class="i">/como-llegar/img/</code></td></tr>
 			<tr class="fragment"><td>Todo el sitio cambió de color o de letra</td><td>Se pegó el CSS entero del HTML, con sus estilos generales</td></tr>
+			<tr class="fragment"><td>La página sale angosta o corrida a un costado</td><td>Astra pone el contenido dentro de <code class="i">.ast-container</code>: darle <code class="i">width: 100%</code> a la clase del <code class="i">&lt;main&gt;</code></td></tr>
+			<tr class="fragment"><td>Los títulos o las imágenes de otras páginas cambiaron</td><td>Reglas sin prefijo (<code class="i">h1</code>, <code class="i">img</code>): van como <code class="i">.como-llegar h1</code></td></tr>
 			<tr class="fragment"><td>La primera regla del CSS nuevo no anda</td><td>Se copió a partir de la mitad de un comentario <code class="i">/* … */</code></td></tr>
 			<tr class="fragment"><td>En el tema hijo las imágenes apuntan a Astra</td><td>En un tema hijo (la práctica de hoy) va <code class="i">get_stylesheet_directory_uri()</code>. En un tema que no es hijo (el del parcial), <code class="i">get_template_directory_uri()</code></td></tr>
 		</tbody>
 	</table>
 </div>
 </main>
-<aside class="notes">La última fila tiene las dos funciones a la vista a propósito: hoy practican en un tema hijo (get_stylesheet_directory_uri()), y el tema del parcial no es hijo (get_template_directory_uri()).</aside>
+<aside class="notes">La última fila tiene las dos funciones a la vista a propósito: hoy practican en un tema hijo (get_stylesheet_directory_uri()), y el tema del parcial no es hijo (get_template_directory_uri()). Las filas de .ast-container y del prefijo son las que más aparecieron al simular la práctica con Astra.</aside>

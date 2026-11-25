@@ -1,14 +1,14 @@
-# Ejercicio 0 · Cómo llegar (reserva Valle del Lunarejo)
+# Ejercicio 0 · Cómo llegar (en el sitio de tu reserva)
 
-Para entrar en calor antes de las páginas de Manson & Chi: la misma receta, con una página corta, en el sitio de **la reserva** que ya tienen en Local, con el tema hijo `reserva-child`. Unos 15 minutos. Es práctica: no se entrega.
+Para entrar en calor antes de las páginas de Manson & Chi: la misma receta, con una página corta, en el sitio de **la reserva que eligieron** (Valle del Lunarejo, Cabo Polonio u otra), que ya tienen en Local con el tema hijo `reserva-child`. Unos 15 minutos. Es práctica: no se entrega.
 
-La maqueta es `como-llegar.html`, con su `estilos.css` y la imagen en `img/`. Abrila en el navegador y miralá con DevTools.
+La maqueta es `como-llegar.html`, con su `estilos.css` y la imagen en `img/`. Abrila en el navegador y miralá con DevTools. Está hecha para el Valle del Lunarejo: si tu reserva es otra, usá los datos de la tuya (cómo se llega, desde dónde, un aviso que sirva y un mapa o una foto). La estructura y las clases, iguales a las de la maqueta.
 
 ## Qué hay que hacer
 
 1. **Plantilla:** `page-como-llegar.php` en `wp-content/themes/reserva-child/`, con el header y el footer del tema, y adentro un `<main class="como-llegar">` que muestre el contenido de la página. El contenido no se escribe en la plantilla.
 2. **Página:** "Cómo llegar", con el slug `como-llegar`, sumada al menú.
-3. **Contenido con bloques:** todo lo que está dentro del `<main>` de la maqueta, con los textos tal cual. El mapa, subido a Medios con su texto alternativo. El aviso del final lleva la clase `aviso`.
+3. **Contenido con bloques:** todo lo que está dentro del `<main>` de la maqueta, con los textos de tu reserva. El mapa, subido a Medios con su texto alternativo. El aviso del final lleva la clase `aviso`.
 4. **Estilos:** solo la sección "Página Cómo llegar" de `estilos.css`, al final del `style.css` de `reserva-child`.
 5. **Revisá:** la maqueta y tu página lado a lado. Después, la portada y una entrada: se tienen que ver igual que antes.
 

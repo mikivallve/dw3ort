@@ -221,7 +221,7 @@ Hacer **la parte del [parcial 2025](https://github.com/mikivallve/dw3-parcial-20
 
 ### Tarea 2: tres páginas con bloques
 
-Para entrar en calor, [`ejemplos/como-llegar/`](ejemplos/como-llegar/) en el sitio de la reserva (unos 15'). Después, en el sitio del simulacro, las tres maquetas de [`ejemplos/manson-chi/`](ejemplos/manson-chi/) (Patient Forms, Office Tour y Visit Us; unos 20', 30' y 40'). Es el bloque E del parcial: `page-{slug}.php` en el tema hijo con `the_content()`, el contenido con bloques y las clases de la maqueta, y solo los estilos de cada página en `custom.css`. El [README](ejemplos/manson-chi/README.md) tiene la receta y las trampas de cada una. Van en el mismo zip que el simulacro.
+Para entrar en calor, [`ejemplos/como-llegar/`](ejemplos/como-llegar/) en el sitio de la reserva de cada uno: Lunarejo, Cabo Polonio u otra (unos 15'). Después, en el sitio del simulacro, las tres maquetas de [`ejemplos/manson-chi/`](ejemplos/manson-chi/) (Patient Forms, Office Tour y Visit Us; unos 20', 30' y 40'). Es el bloque E del parcial: `page-{slug}.php` en el tema hijo con `the_content()`, el contenido con bloques y las clases de la maqueta, y solo los estilos de cada página en `custom.css`. El [README](ejemplos/manson-chi/README.md) tiene la receta y las trampas de cada una. Van en el mismo zip que el simulacro.
 
 ## [Clase 16: Preparación del parcial](https://dw3.netlify.app/#/14)
 

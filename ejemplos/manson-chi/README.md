@@ -50,13 +50,13 @@ Tres páginas nuevas para el sitio del simulacro (Manson & Chi Dentistry). Es la
 | --- | --- | --- | --- | --- | --- |
 | 1 | `1-patient-forms/` | `patient-forms` | `formularios` | Grupo, Título, Párrafo, Imagen, Lista y Botón | 20' |
 | 2 | `2-office-tour/` | `office-tour` | `oficina` | Tarjetas (Grupos o Columnas) y Medios y texto | 30' |
-| 3 | `3-visit-us/` | `visit-us` | `visita` | Tabla, Detalles, Ancla HTML y dos botones juntos | 40' |
+| 3 | `3-visit-us/` | `visit-us` | `ubicacion` | Tabla, Detalles, Ancla HTML y dos botones juntos | 40' |
 
 **1 · Patient Forms.** La raya marrón debajo del título la pone el CSS: no agregues un Separador. La caja verde (`formularios-caja`) va dentro del grupo `formularios-cuerpo`, al lado de la imagen.
 
 **2 · Office Tour.** Las tres tarjetas son tres Grupos `oficina-tarjeta` dentro de un Grupo `oficina-tarjetas` (con Columnas también sale). La parte de abajo es un solo bloque **Medios y texto** con la clase `oficina-destacado`; el título, el párrafo y el botón van en su lado de texto.
 
-**3 · Visit Us.** "Book your visit" lleva a `#reservar`: el grupo del final lleva el ancla `reservar`. Cada pregunta es un bloque Detalles con la clase `visita-pregunta`. En la dirección, el salto de línea es Mayús + Enter. Los botones claros llevan dos clases: `visita-boton visita-boton-claro`.
+**3 · Visit Us.** "Book your visit" lleva a `#turnos`: el grupo del final lleva el ancla `turnos`. Cada pregunta es un bloque Detalles con la clase `ubicacion-pregunta`. En la dirección, el salto de línea es Mayús + Enter. Los botones claros llevan dos clases: `ubicacion-boton ubicacion-boton-claro`.
 
 ## Cómo saber si está bien
 

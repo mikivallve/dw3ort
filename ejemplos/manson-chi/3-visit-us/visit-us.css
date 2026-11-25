@@ -39,7 +39,7 @@ img { max-width: 100%; }
    Página Visit Us
    ========================================================== */
 /* Los colores y las fuentes de la página van acá: el tema no los define */
-.visita {
+.ubicacion {
     --verde: #45685a;
     --verde-claro: #b1c3b7;
     --verde-fondo: #e8eeea;
@@ -57,22 +57,22 @@ img { max-width: 100%; }
 
 /* WordPress envuelve el contenido de algunos grupos en un div propio:
    que no cuente para la grilla. En la maqueta no hace nada. */
-.visita .wp-block-group__inner-container { display: contents; }
+.ubicacion .wp-block-group__inner-container { display: contents; }
 
-.visita figure { margin: 0; }
+.ubicacion figure { margin: 0; }
 
-.visita h1,
-.visita h2,
-.visita h3 {
+.ubicacion h1,
+.ubicacion h2,
+.ubicacion h3 {
     font-family: var(--titulos);
     font-weight: 700;
     line-height: 1.15;
     color: var(--verde);
 }
 
-.visita p,
-.visita li,
-.visita td {
+.ubicacion p,
+.ubicacion li,
+.ubicacion td {
     font-family: var(--texto);
     font-size: 1.05rem;
     line-height: 1.75;
@@ -82,8 +82,8 @@ img { max-width: 100%; }
 /* Botón: el enlace de adentro. En WordPress, el tema pinta los botones con una regla
    más específica (.wp-block-button .wp-block-button__link:not(.has-background)):
    la segunda línea del selector le gana. */
-.visita .visita-boton a,
-.visita .visita-boton .wp-block-button__link:not(.has-background) {
+.ubicacion .ubicacion-boton a,
+.ubicacion .ubicacion-boton .wp-block-button__link:not(.has-background) {
     display: inline-block;
     padding: 0.85rem 1.8rem;
     border: 2px solid var(--marron);
@@ -99,10 +99,10 @@ img { max-width: 100%; }
     transition: background 0.3s, color 0.3s;
 }
 
-.visita .visita-boton a:hover,
-.visita .visita-boton .wp-block-button__link:not(.has-background):hover { background: transparent; color: var(--marron); }
+.ubicacion .ubicacion-boton a:hover,
+.ubicacion .ubicacion-boton .wp-block-button__link:not(.has-background):hover { background: transparent; color: var(--marron); }
 
-.visita .visita-rotulo {
+.ubicacion .ubicacion-rotulo {
     margin: 0 0 0.5rem;
     font-family: var(--titulos);
     font-size: 0.8rem;
@@ -113,30 +113,30 @@ img { max-width: 100%; }
 }
 
 /* Variante del botón: borde y texto claros, sin fondo */
-.visita .visita-boton-claro a,
-.visita .visita-boton-claro .wp-block-button__link:not(.has-background) {
+.ubicacion .ubicacion-boton-claro a,
+.ubicacion .ubicacion-boton-claro .wp-block-button__link:not(.has-background) {
     border-color: currentColor;
     background: transparent;
     color: var(--marron);
 }
 
-.visita .visita-boton-claro a:hover,
-.visita .visita-boton-claro .wp-block-button__link:not(.has-background):hover { background: var(--marron); color: var(--blanco); }
+.ubicacion .ubicacion-boton-claro a:hover,
+.ubicacion .ubicacion-boton-claro .wp-block-button__link:not(.has-background):hover { background: var(--marron); color: var(--blanco); }
 
 /* Cabecera: foto ancha y la caja verde montada abajo a la derecha */
-.visita-cabecera {
+.ubicacion-cabecera {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     width: min(100% - 2.5rem, 1140px);
     margin: 0 auto 8rem;
 }
 
-.visita .visita-cabecera-foto {
+.ubicacion .ubicacion-cabecera-foto {
     grid-column: 1 / 10;
     grid-row: 1;
 }
 
-.visita .visita-cabecera-foto img {
+.ubicacion .ubicacion-cabecera-foto img {
     display: block;
     width: 100%;
     height: 60vh;
@@ -144,7 +144,7 @@ img { max-width: 100%; }
     object-fit: cover;
 }
 
-.visita-cabecera-caja {
+.ubicacion-cabecera-caja {
     grid-column: 7 / 13;
     grid-row: 1;
     align-self: end;
@@ -154,12 +154,12 @@ img { max-width: 100%; }
     box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.45);
 }
 
-.visita .visita-cabecera-caja h1 { margin: 0 0 1rem; font-size: clamp(2.2rem, 4.5vw, 3.2rem); color: var(--blanco); }
-.visita .visita-cabecera-caja p { color: rgba(255, 255, 255, 0.85); }
-.visita .visita-cabecera-caja .visita-rotulo { color: var(--verde-claro); }
+.ubicacion .ubicacion-cabecera-caja h1 { margin: 0 0 1rem; font-size: clamp(2.2rem, 4.5vw, 3.2rem); color: var(--blanco); }
+.ubicacion .ubicacion-cabecera-caja p { color: rgba(255, 255, 255, 0.85); }
+.ubicacion .ubicacion-cabecera-caja .ubicacion-rotulo { color: var(--verde-claro); }
 
 /* Datos: horarios y dirección lado a lado */
-.visita-datos {
+.ubicacion-datos {
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 4rem;
@@ -167,36 +167,36 @@ img { max-width: 100%; }
     margin: 0 auto 6rem;
 }
 
-.visita-datos h2 { margin: 0 0 1.5rem; font-size: 2rem; }
+.ubicacion-datos h2 { margin: 0 0 1.5rem; font-size: 2rem; }
 
-.visita-horarios table { width: 100%; border-collapse: collapse; }
+.ubicacion-horarios table { width: 100%; border-collapse: collapse; }
 
-.visita .visita-horarios td {
+.ubicacion .ubicacion-horarios td {
     padding: 0.9rem 0;
     border: 0;
     border-bottom: 1px solid var(--verde-claro);
 }
 
-.visita .visita-horarios td:last-child { text-align: right; font-weight: 600; color: var(--verde); }
+.ubicacion .ubicacion-horarios td:last-child { text-align: right; font-weight: 600; color: var(--verde); }
 
-.visita-direccion {
+.ubicacion-direccion {
     padding: 2.5rem;
     background: var(--crema);
 }
 
 /* Preguntas: cada una se abre y se cierra */
-.visita-preguntas {
+.ubicacion-preguntas {
     width: min(100% - 2.5rem, 820px);
     margin: 0 auto 6rem;
 }
 
-.visita-preguntas h2 { margin: 0 0 1.5rem; font-size: 2rem; text-align: center; }
+.ubicacion-preguntas h2 { margin: 0 0 1.5rem; font-size: 2rem; text-align: center; }
 
-.visita-pregunta {
+.ubicacion-pregunta {
     border-bottom: 1px solid var(--verde-claro);
 }
 
-.visita-pregunta summary {
+.ubicacion-pregunta summary {
     padding: 1.1rem 0;
     font-family: var(--titulos);
     font-size: 1.15rem;
@@ -205,34 +205,34 @@ img { max-width: 100%; }
     cursor: pointer;
 }
 
-.visita .visita-pregunta p { margin: 0 0 1.2rem; }
+.ubicacion .ubicacion-pregunta p { margin: 0 0 1.2rem; }
 
 /* Reservar: franja verde oscura con dos botones */
-.visita { padding-bottom: 0; }
+.ubicacion { padding-bottom: 0; }
 
-.visita-reservar {
+.ubicacion-turnos {
     padding: 5rem 1.5rem;
     background: var(--oscuro);
     text-align: center;
 }
 
-.visita .visita-reservar h2 { margin: 0 0 0.8rem; font-size: 2.4rem; color: var(--blanco); }
-.visita .visita-reservar p { margin: 0 auto 2rem; max-width: 520px; color: rgba(255, 255, 255, 0.8); }
+.ubicacion .ubicacion-turnos h2 { margin: 0 0 0.8rem; font-size: 2.4rem; color: var(--blanco); }
+.ubicacion .ubicacion-turnos p { margin: 0 auto 2rem; max-width: 520px; color: rgba(255, 255, 255, 0.8); }
 
-.visita .visita-botones {
+.ubicacion .ubicacion-botones {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
 }
 
-.visita .visita-reservar .visita-boton-claro a,
-.visita .visita-reservar .visita-boton-claro .wp-block-button__link:not(.has-background) { color: var(--blanco); }
+.ubicacion .ubicacion-turnos .ubicacion-boton-claro a,
+.ubicacion .ubicacion-turnos .ubicacion-boton-claro .wp-block-button__link:not(.has-background) { color: var(--blanco); }
 
 @media (max-width: 800px) {
-    .visita-cabecera,
-    .visita-datos { display: block; }
-    .visita .visita-cabecera-foto img { height: 40vh; }
-    .visita-cabecera-caja { margin: -3rem 1rem 0; padding: 2rem; }
-    .visita-direccion { margin-top: 3rem; }
+    .ubicacion-cabecera,
+    .ubicacion-datos { display: block; }
+    .ubicacion .ubicacion-cabecera-foto img { height: 40vh; }
+    .ubicacion-cabecera-caja { margin: -3rem 1rem 0; padding: 2rem; }
+    .ubicacion-direccion { margin-top: 3rem; }
 }

@@ -230,7 +230,7 @@ Taller de 3 horas (en las slides, _clase 13_).
 - **Bloque 1 (25'):** corrección del simulacro: autocorrección con la letra y errores comunes.
 - **Bloque 2 (40'):** contrarreloj: rehacer de cero, con bloques, la página de Manson & Chi que más les costó, en 30', con 10' de corrección cruzada.
 - **Bloque 3 (40'):** cazar un error de CSS con DevTools en parejas (10') y sprint de panel en el sitio del simulacro (30'), con lo que el parcial pide y el simulacro no: un Editor y un Autor, borrar el Autor atribuyendo su contenido, logo con texto alternativo, ícono recortado, una entrada completa a partir de una publicación de Instagram (texto y foto tal cual) y la categoría por defecto. Cierra con "dónde está cada cosa en el panel".
-- **Bloque 4 (20'):** repaso teórico con preguntas tipo parcial y las dudas del simulacro.
+- **Bloque 4 (20'):** repaso teórico: 8 preguntas tipo, variantes de las del parcial con otros casos (qué plantilla usa WordPress, entrada o página, `home.php`, el riesgo del Administrador, Autor o Editor, por qué no pegar el HTML en la plantilla y qué hacen el loop y `the_content()`), y las dudas del simulacro.
 - **Bloque 5 (10'):** el día del parcial: checklist de inicio y de entrega.
 - **Bloque 6 (20'):** consultas libres (el colchón de la clase).
 

@@ -112,9 +112,9 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
 - **Dónde está cada cosa** · Bloque 3 · El panel (`parcial-1.3`)
   Cierre del sprint de panel (clase 13). Preguntar antes de mostrar cada fila: "¿dónde lo harían?". Las que más fallan: categoría por defecto (está en Escritura, no en Categorías) y borrar un usuario sin perder su contenido.
 - **Preguntas tipo (I)** · Bloque 4 · Repaso (`parcial-2.5`)
-  Que respondan en papel 2 minutos por pregunta, sin dispositivos, como en el parcial. Después mostrar la respuesta.
+  Que respondan en papel 2 minutos por pregunta, sin dispositivos, como en el parcial. Después mostrar la respuesta. Son variantes de las preguntas 1, 2 y 4 del teórico, con otros casos. La del blog es la trampa de siempre: home.php no es la portada.
 - **Preguntas tipo (II)** · Bloque 4 · Repaso (`parcial-2.6`)
-  Cerrar el bloque con las dudas que juntamos al corregir el simulacro.
+  Variantes de las preguntas 3 y 5 del teórico. La de Administrador es la que más falla: no alcanza con "tiene muchos permisos", hay que decir qué podría salir mal. Cerrar el bloque con las dudas que juntamos al corregir el simulacro.
 - **El día del parcial** · Bloque 5 · Checklist (`parcial-2.7`)
   Si el export de Local falla en el laboratorio: comprimir la carpeta del sitio y además exportar la base desde Database › Adminer. Avisar que existe el plan B, pero que no cuenten con él.
 - **Reserva viva** · Opcional · Tarea 2 (`wp-2.17`)

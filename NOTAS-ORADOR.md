@@ -78,14 +78,16 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
   El teórico va adentro de las 3 horas, al principio. Insistir en el minuto 20–35: el error más caro de 2025 fue empezar a cambiar sin haber recorrido el sitio. Recordar que suma 55 sobre 50: trabarse en un punto no es perder el parcial. El panel va antes que el HTML → WordPress a propósito: son puntos seguros y rápidos, y si E se alarga no se pierden. E da puntaje parcial.
 - **¿Qué plantilla usa WordPress?** · Bloque 3 · Jerarquía (`parcial-2.1`)
   Pregunta disparadora: "si creo page-contacto.php, ¿qué pasa con /nosotros?". Nada: sigue usando page.php. Esa es la idea para pasar UNA página. Las filas de etiqueta y 404 conectan con la tarea: el menú a /tag/raro/ funciona sin tag.php porque cae en archive.php o index.php.
-- **De un HTML a page-{slug}.php** · Bloque 3 · Receta (`parcial-2.2`)
-  Mostrarlo en vivo con un HTML cualquiera. Remarcar que no hace falta Template Name: el nombre del archivo ya alcanza. Insistir con la función de la ruta: hoy practican en reserva-child, así que va get_stylesheet_directory_uri(); con get_template_directory_uri() las imágenes se buscan en Astra y salen rotas. En un tema sin hijo, como el del parcial, las dos funciones devuelven lo mismo: cualquiera de las dos está bien.
+- **De un HTML a page-{slug}.php + bloques** · Bloque 3 · Receta (`parcial-2.2`)
+  Mostrarlo en vivo con el ejercicio 1 de Manson & Chi (ejemplos/manson-chi). Remarcar que no hace falta Template Name: el nombre del archivo ya alcanza. La idea central, que es la pregunta 5 del teórico: si el HTML se pega en la plantilla, la página se ve pero el cliente no puede cambiar un precio ni una foto sin tocar código. Mostrar dónde está "Clases CSS adicionales" (barra lateral › Avanzado) y que en un elemento con dos clases van las dos separadas por un espacio.
 - **Lo que suele salir mal** · Bloque 3 · Trampas (`parcial-2.3`)
-  La última fila tiene las dos funciones a la vista a propósito: hoy practican en un tema hijo (get_stylesheet_directory_uri()), y el tema del parcial no es hijo (get_template_directory_uri()). Las filas de .ast-container y del prefijo son las que más aparecieron al simular la práctica con Astra.
+  WordPress mete el contenido de cada Grupo dentro de un div propio (wp-block-group__inner-container) cuando el tema no tiene theme.json. El CSS de las maquetas ya lo neutraliza con display: contents: que no borren esa regla. En el tema de Manson & Chi, además, los botones y Medios y texto tienen reglas del tema que les ganan; el CSS de los ejercicios ya trae el selector que les gana, con un comentario.
 - **Manos a la obra** · Bloque 3 · Práctica (`parcial-2.4`)
-  Si alguno no tiene su sitio estático a mano, que use ejemplos/como-llegar/ del repo (página chica con header, footer y CSS general a propósito, para que aparezcan las trampas). Si no tiene reserva-child, ejemplos/reserva-child/ trae style.css y functions.php mínimos para copiar a wp-content/themes/ y activarlo. Los que terminan: pasar una segunda página.
+  Los que terminan siguen con el ejercicio 2. En este tema el style.css del hijo no se carga (functions.php encola custom.css): que lo descubran con DevTools mirando el head. La solución en bloques de los tres ejercicios está en el repo del parcial, docente/ejercicios-manson-chi/.
 - **Parcial 2025** · Bloque 4 · Simulacro (`parcial-1.5`)
   Lo importante de arrancar en clase: que todos logren importar el zip en Local antes de irse. Si alguien no puede bajarlo, pasarlo por pendrive. Si la descarga se hizo al entrar y la importación en la pausa, con 60' en clase la mayoría termina los ajustes y la parte A acá. Lo que se suma del parcial 2026 no está en la letra 2025: ajustes (5 pts, ya vistos en wp-2.3 y wp-2.8), usuarios con Atribuir (4) y la entrada completa (6). Así llegan al sprint del 01/12 habiéndolo hecho una vez. Los zips entregados se pasan por corregir.py --config simulacro-2025 antes del 01/12. Ojo: el WordPress del simulacro es viejo; como el 7 se saltea, no hace falta Duplicate Post.
+- **Tres páginas con bloques** · Para casa · Tarea (`parcial-1.8`)
+  Se suma al simulacro: los dos van en el mismo zip que entregan antes del lunes 30/11, así corregir.py y la revisión cubren las dos cosas. El README de ejemplos/manson-chi tiene la receta, la tabla de etiqueta → bloque y las trampas de cada ejercicio.
 - **Dónde, gratis** · Para casa · Opcional (`deploy-1.0`)
   Datos de noviembre 2026: Pantheon Silver $0 con 2 sandboxes; para conectar dominio hace falta un plan pago. InstaWP pide tarjeta. Revisar antes de cada semestre.
 - **Crear el sandbox** · Para casa · Pantheon (`deploy-1.1`)
@@ -101,8 +103,8 @@ Las notas que se ven con la tecla **S** en la presentación, en el orden del dec
   Total 155 min + 15 de margen; las consultas son el colchón. Al final del deck están las Tareas 1 y 2, opcionales, para después del parcial. Empezar preguntando qué les costó del simulacro y anotarlo en el pizarrón para el bloque 4.
 - **Qué miramos** · Bloque 1 · Corrección (`parcial-1.6`)
   Proyectar el sitio de un voluntario y corregir juntos 3 o 4 puntos. Juntar las dudas para el repaso del bloque 4.
-- **Otra página, con reloj** · Bloque 2 · Contrarreloj (`parcial-2.8`)
-  Es la parte del parcial con código (15 de 45 puntos del práctico). Ya lo practicaron en la clase 12: 30' alcanza. El que no llega, sabe qué repasar.
+- **Una página, con el reloj del parcial** · Bloque 2 · Contrarreloj (`parcial-2.8`)
+  Es la parte del parcial con código (15 de 45 puntos del práctico). Antes de arrancar, borrar la página y la plantilla que hicieron en casa (o usar otro slug, como visit-us-2 con su page-visit-us-2.php). El que no llega en 30', sabe qué repasar.
 - **Cazar un error de CSS** · Bloque 3 · DevTools (`parcial-1.4`)
   10 minutos, abre el sprint de panel (clase 13). En parejas, en el sitio del simulacro: cada uno agrega una regla rota en CSS adicional del sitio del otro (sin decir dónde) y el otro la caza con DevTools y la arregla donde nace.
 - **Lo que el simulacro no pide** · Bloque 3 · Sprint de panel (`parcial-2.9`)

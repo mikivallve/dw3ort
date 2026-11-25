@@ -10,15 +10,15 @@
 <div class="wp-wrap">
 	<div class="cols">
 		<div class="col-60">
-			<p>Elegir <strong>una</strong> página de su sitio estático (módulos anteriores) y pasarla al sitio de la reserva, en <code class="i">reserva-child</code>.</p>
+			<p>En el sitio del simulacro: el <strong>ejercicio 1, Patient Forms</strong>, de <a class="icon-link" href="https://github.com/mikivallve/dw3ort/tree/master/ejemplos/manson-chi" target="_blank" rel="noreferrer">ejemplos/manson-chi</a>.</p>
 			<ol>
-				<li class="fragment">Crear <code class="i">page-{slug}.php</code> con <code class="i">get_header()</code>, el <code class="i">&lt;main&gt;</code> y <code class="i">get_footer()</code>.</li>
-				<li class="fragment">Mover sus imágenes a <code class="i">reserva-child/img/</code> y usar <code class="i">get_stylesheet_directory_uri()</code>.</li>
-				<li class="fragment">Sumar a <code class="i">style.css</code> del hijo solo los estilos de esa página.</li>
-				<li class="fragment">Crear la página con el slug exacto y agregarla al menú.</li>
-				<li class="fragment">Revisar que la home y una entrada se sigan viendo igual que antes.</li>
+				<li class="fragment"><code class="i">page-patient-forms.php</code> en el tema hijo (<code class="i">pfdm-cpi-cp</code>), con <code class="i">&lt;main class="formularios"&gt;</code> y <code class="i">the_content()</code>.</li>
+				<li class="fragment">La página con el slug <code class="i">patient-forms</code>.</li>
+				<li class="fragment">El contenido con bloques y las clases de la maqueta. La foto, a Medios.</li>
+				<li class="fragment">La sección "Página Patient Forms" del CSS, al final de <code class="i">custom.css</code> del hijo. ¿Por qué no <code class="i">style.css</code>? DevTools.</li>
+				<li class="fragment">Maqueta y página lado a lado. El resto del sitio, igual que antes.</li>
 			</ol>
-			<p class="mt-2"><small>Con IA: pídanle que explique cada línea de PHP que les propone. En el teórico se pregunta.</small></p>
+			<p class="mt-2"><small>Con IA, en modo tutor: que les explique qué bloque corresponde o por qué una clase no aplica.</small></p>
 		</div>
 		<div class="col-40 text-center">
 			<p style="font-size:5rem;margin:0">40'</p>
@@ -26,4 +26,4 @@
 	</div>
 </div>
 </main>
-<aside class="notes">Si alguno no tiene su sitio estático a mano, que use ejemplos/como-llegar/ del repo (página chica con header, footer y CSS general a propósito, para que aparezcan las trampas). Si no tiene reserva-child, ejemplos/reserva-child/ trae style.css y functions.php mínimos para copiar a wp-content/themes/ y activarlo. Los que terminan: pasar una segunda página.</aside>
+<aside class="notes">Los que terminan siguen con el ejercicio 2. En este tema el style.css del hijo no se carga (functions.php encola custom.css): que lo descubran con DevTools mirando el head. La solución en bloques de los tres ejercicios está en el repo del parcial, docente/ejercicios-manson-chi/.</aside>

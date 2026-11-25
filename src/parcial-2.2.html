@@ -3,7 +3,7 @@
 		<h1 class="lead-title"><small>Parcial</small>Preparación</h1>
 		<div class="separator"></div>
 		<img data-src="assets/logo-wp.svg" alt="WordPress" width="50" class="m-0" />
-		<h2><small>Bloque 3 · Receta</small>De un HTML a <code class="i">page-{slug}.php</code></h2>
+		<h2><small>Bloque 3 · Receta</small>De un HTML a <code class="i">page-{slug}.php</code> + bloques</h2>
 	</div>
 </header>
 <main>
@@ -11,30 +11,27 @@
 	<div class="cols">
 		<div class="col-50">
 			<ol>
-				<li class="fragment"><strong>Plantilla:</strong> crear <code class="i">page-como-llegar.php</code> en el tema, con <code class="i">get_header()</code> y <code class="i">get_footer()</code>.</li>
-				<li class="fragment"><strong>Contenido:</strong> pegar solo el <code class="i">&lt;main&gt;</code> del HTML. El <code class="i">&lt;head&gt;</code>, el header y el footer ya los pone el tema.</li>
-				<li class="fragment"><strong>Imágenes:</strong> a una carpeta <code class="i">img/</code> del tema, con la ruta que da WordPress: <code class="i">get_stylesheet_directory_uri()</code> es la del tema activo. En un tema sin hijo, como el del parcial, <code class="i">get_template_directory_uri()</code> da lo mismo.</li>
-				<li class="fragment"><strong>Estilos:</strong> sumar a <code class="i">style.css</code> solo los de esa página.</li>
-				<li class="fragment"><strong>Página:</strong> crearla en el panel con el slug exacto (<code class="i">como-llegar</code>).</li>
+				<li class="fragment"><strong>Plantilla:</strong> <code class="i">page-{slug}.php</code> con <code class="i">get_header()</code>, el <code class="i">&lt;main&gt;</code> con su clase, el loop con <code class="i">the_content()</code> y <code class="i">get_footer()</code>. El contenido no va acá.</li>
+				<li class="fragment"><strong>Página:</strong> creada en el panel con el slug exacto.</li>
+				<li class="fragment"><strong>Bloques:</strong> cada parte del <code class="i">&lt;main&gt;</code> de la maqueta, con su bloque: Grupo, Imagen, Título, Párrafo, Lista, Tabla, Botón.</li>
+				<li class="fragment"><strong>Clases:</strong> las de la maqueta, en <em>Avanzado › Clases CSS adicionales</em> de cada bloque. Las imágenes, a Medios.</li>
+				<li class="fragment"><strong>Estilos:</strong> solo la sección de esa página, al CSS del tema.</li>
 			</ol>
 		</div>
 		<div class="col-50">
 			<pre class="sm"><code class="php">&lt;?php get_header(); ?&gt;
 
-&lt;main class="como-llegar"&gt;
-  &lt;h1&gt;Cómo llegar&lt;/h1&gt;
-  &lt;!-- Tema hijo (hoy) --&gt;
-  &lt;img src="&lt;?php echo
-    get_stylesheet_directory_uri();
-  ?&gt;/img/mapa.jpg" alt="Mapa de la reserva"&gt;
-  &lt;!-- Sin hijo (el parcial), igual:
-    get_template_directory_uri() --&gt;
-  &lt;!-- …el resto del &lt;main&gt; del HTML… --&gt;
+&lt;main class="visitas"&gt;
+  &lt;?php while ( have_posts() ) :
+    the_post(); ?&gt;
+    &lt;?php the_content(); ?&gt;
+  &lt;?php endwhile; ?&gt;
 &lt;/main&gt;
 
 &lt;?php get_footer(); ?&gt;</code></pre>
+			<p class="mt-2"><small>La plantilla pone el marco. El contenido lo edita el cliente en el panel.</small></p>
 		</div>
 	</div>
 </div>
 </main>
-<aside class="notes">Mostrarlo en vivo con un HTML cualquiera. Remarcar que no hace falta Template Name: el nombre del archivo ya alcanza. Insistir con la función de la ruta: hoy practican en reserva-child, así que va get_stylesheet_directory_uri(); con get_template_directory_uri() las imágenes se buscan en Astra y salen rotas. En un tema sin hijo, como el del parcial, las dos funciones devuelven lo mismo: cualquiera de las dos está bien.</aside>
+<aside class="notes">Mostrarlo en vivo con el ejercicio 1 de Manson &amp; Chi (ejemplos/manson-chi). Remarcar que no hace falta Template Name: el nombre del archivo ya alcanza. La idea central, que es la pregunta 5 del teórico: si el HTML se pega en la plantilla, la página se ve pero el cliente no puede cambiar un precio ni una foto sin tocar código. Mostrar dónde está "Clases CSS adicionales" (barra lateral › Avanzado) y que en un elemento con dos clases van las dos separadas por un espacio.</aside>

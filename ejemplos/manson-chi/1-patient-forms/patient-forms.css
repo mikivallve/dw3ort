@@ -1,0 +1,184 @@
+/* ==========================================================
+   Estilos generales de la maqueta
+   ========================================================== */
+:root {
+    --verde: #45685a;
+    --verde-claro: #b1c3b7;
+    --verde-fondo: #e8eeea;
+    --marron: #7a6652;
+    --crema: #f4f0eb;
+    --rosa: #f7efe9;
+    --oscuro: #303634;
+    --blanco: #ffffff;
+    --titulos: "Rubik", Arial, sans-serif;
+    --texto: "Lora", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #fafafa;
+}
+
+h1, h2, h3 { font-family: Georgia, serif; color: #222; }
+img { max-width: 100%; }
+
+.contenedor { width: min(100% - 2rem, 1140px); margin-inline: auto; }
+.sitio-header { background: var(--blanco); border-bottom: 1px solid #ddd; }
+.sitio-header .contenedor { display: flex; justify-content: space-between; align-items: center; padding-block: 1rem; }
+.marca { font-family: var(--titulos); font-weight: 700; letter-spacing: 0.1em; color: var(--verde); text-decoration: none; }
+.menu { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+.menu a { color: var(--oscuro); text-decoration: none; font-size: 0.9rem; }
+.sitio-footer { background: var(--oscuro); color: var(--crema); padding-block: 2rem; font-size: 0.85rem; }
+
+/* ==========================================================
+   Página Patient Forms
+   ========================================================== */
+/* Los colores y las fuentes de la página van acá: el tema no los define */
+.formularios {
+    --verde: #45685a;
+    --verde-claro: #b1c3b7;
+    --verde-fondo: #e8eeea;
+    --marron: #7a6652;
+    --crema: #f4f0eb;
+    --rosa: #f7efe9;
+    --oscuro: #303634;
+    --blanco: #ffffff;
+    --titulos: "Rubik", Arial, sans-serif;
+    --texto: "Lora", Georgia, serif;
+
+    padding: 4rem 0 6rem;
+    background: var(--blanco);
+}
+
+/* WordPress envuelve el contenido de algunos grupos en un div propio:
+   que no cuente para la grilla. En la maqueta no hace nada. */
+.formularios .wp-block-group__inner-container { display: contents; }
+
+.formularios figure { margin: 0; }
+
+.formularios h1,
+.formularios h2,
+.formularios h3 {
+    font-family: var(--titulos);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--verde);
+}
+
+.formularios p,
+.formularios li,
+.formularios td {
+    font-family: var(--texto);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #555;
+}
+
+/* Botón: el enlace de adentro. En WordPress, el tema pinta los botones con una regla
+   más específica (.wp-block-button .wp-block-button__link:not(.has-background)):
+   la segunda línea del selector le gana. */
+.formularios .formularios-boton a,
+.formularios .formularios-boton .wp-block-button__link:not(.has-background) {
+    display: inline-block;
+    padding: 0.85rem 1.8rem;
+    border: 2px solid var(--marron);
+    border-radius: 0;
+    background: var(--marron);
+    color: var(--blanco);
+    font-family: var(--titulos);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.formularios .formularios-boton a:hover,
+.formularios .formularios-boton .wp-block-button__link:not(.has-background):hover { background: transparent; color: var(--marron); }
+
+/* Intro: título con la raya marrón abajo */
+.formularios-intro {
+    width: min(100% - 2.5rem, 760px);
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.formularios-intro h1 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+}
+
+.formularios-intro h1::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 3px;
+    margin: 1.2rem auto 0;
+    background: var(--marron);
+}
+
+/* Cuerpo: foto a la izquierda y la caja de formularios montada encima */
+.formularios-cuerpo {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    width: min(100% - 2.5rem, 1140px);
+    margin: 0 auto 3rem;
+}
+
+.formularios .formularios-foto {
+    grid-column: 1 / 8;
+    grid-row: 1;
+}
+
+.formularios .formularios-foto img {
+    display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.formularios-caja {
+    grid-column: 7 / 13;
+    grid-row: 1;
+    position: relative;
+    padding: 2.5rem 3rem;
+    background: var(--verde-fondo);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.35);
+}
+
+.formularios-caja h2 { margin: 0 0 1rem; font-size: 1.9rem; }
+
+.formularios .formularios-lista {
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.formularios-lista li {
+    padding: 0.6rem 0 0.6rem 2rem;
+    border-bottom: 1px solid var(--verde-claro);
+    font-family: var(--titulos);
+    font-size: 1rem;
+    color: var(--verde);
+    background: linear-gradient(var(--marron), var(--marron)) left center / 0.8rem 0.8rem no-repeat;
+}
+
+.formularios .formularios-nota {
+    width: min(100% - 2.5rem, 760px);
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 800px) {
+    .formularios-cuerpo { display: block; }
+    .formularios .formularios-foto img { height: 300px; }
+    .formularios-caja { margin: -3rem 1rem 0; padding: 2rem; }
+}
